@@ -373,10 +373,10 @@ export default function Home() {
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">Tem um projeto em mente?</h2>
               <p className="text-muted-foreground text-lg max-w-xl">
-                Peça um orçamento gratuito e sem compromisso. Analisamos o seu projeto e apresentamos a melhor solução técnica e financeira.
+                Orçamento gratuito e sem compromisso. Analisamos o seu projeto e apresentamos a melhor solução técnica e financeira.
               </p>
               <p className="text-sm text-slate-500 mt-4 italic">
-                Custo de deslocação: 25€ (reembolsável se contratar os nossos serviços)
+                Custo de deslocação: 25 euros
               </p>
             </div>
             
