@@ -294,7 +294,7 @@ export default function Home() {
               </h2>
               <p className="text-sm text-muted-foreground">Acompanhe o dia-a-dia das nossas obras.</p>
             </div>
-            <a href="#" className="text-sm font-bold text-secondary hover:underline">Seguir no Instagram</a>
+            <a href="https://www.instagram.com/b.lconstrucao/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-secondary hover:underline">Seguir no Instagram</a>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2">

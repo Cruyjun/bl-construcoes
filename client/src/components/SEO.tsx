@@ -44,7 +44,7 @@ export default function SEO({
           "email": "geral@blconstrucoes.pt",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Rua da Construção, 123",
+            "streetAddress": "Rua das Orquídeas, 2950-807",
             "addressLocality": "Lisboa",
             "postalCode": "1000-001",
             "addressCountry": "PT"

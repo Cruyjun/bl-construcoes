@@ -54,9 +54,9 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Morada</h3>
                       <p className="text-muted-foreground text-sm">
-                        Rua da Construção, 123<br />
-                        1000-001 Lisboa<br />
-                        Portugal
+                        Rua das Orquídeas, 2950-807<br />
+                        Quinta do Anjo, Portugal<br />
+                        <span className="text-xs text-slate-400 italic mt-1 block">Sede registada. Atendimento por agendamento.</span>
                       </p>
                     </div>
                   </div>
