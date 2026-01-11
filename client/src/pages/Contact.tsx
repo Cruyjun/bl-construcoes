@@ -124,7 +124,10 @@ export default function Contact() {
             {/* Form */}
             <div className="bg-slate-50 p-8 md:p-10 border border-border">
               <h2 className="text-2xl font-heading font-bold text-primary mb-2">Pedir Orçamento</h2>
-              <p className="text-muted-foreground mb-8 text-sm">Preencha o formulário abaixo e entraremos em contacto no prazo máximo de 24h úteis.</p>
+              <p className="text-muted-foreground mb-4 text-sm">Preencha o formulário abaixo e entraremos em contacto no prazo máximo de 24h úteis.</p>
+              <div className="bg-white border-l-4 border-secondary p-4 mb-8 text-sm">
+                <p className="text-muted-foreground"><strong>Custo de deslocação:</strong> 25€ (reembolsável se contratar os nossos serviços)</p>
+              </div>
               
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
