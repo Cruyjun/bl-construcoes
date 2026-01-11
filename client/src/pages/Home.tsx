@@ -116,10 +116,8 @@ export default function Home() {
                     <CheckCircle2 className="h-4 w-4 text-secondary" /> Eficiência Energética
                   </li>
                 </ul>
-                <Link href="/servicos">
-                  <a className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
-                    Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                <Link href="/servicos" className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
+                  Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
@@ -146,10 +144,8 @@ export default function Home() {
                     <CheckCircle2 className="h-4 w-4 text-secondary" /> Carpintaria à Medida
                   </li>
                 </ul>
-                <Link href="/servicos">
-                  <a className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
-                    Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                <Link href="/servicos" className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
+                  Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
@@ -176,10 +172,8 @@ export default function Home() {
                     <CheckCircle2 className="h-4 w-4 text-secondary" /> Impermeabilizações
                   </li>
                 </ul>
-                <Link href="/servicos">
-                  <a className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
-                    Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                <Link href="/servicos" className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
+                  Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
