@@ -43,11 +43,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Main Header */}
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-20 items-center justify-between">
+        <div className="container flex h-24 items-center justify-between">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center gap-3 group">
-              <img src="/images/logo.png" alt="B&L Construções" className="h-12 transition-transform group-hover:scale-105" />
+            <a className="flex items-center gap-0 group">
+              <img src="/images/logo.png" alt="B&L Construções" className="h-20 transition-transform group-hover:scale-105" />
             </a>
           </Link>
 
@@ -124,13 +124,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             {/* Brand Column */}
             <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <div className="h-8 w-8 bg-white flex items-center justify-center text-primary font-heading font-bold text-lg">
-                  B&L
-                </div>
-                <span className="font-heading font-bold text-xl text-white">CONSTRUÇÕES</span>
+              <div className="flex items-center gap-0">
+                <img src="/images/logo.png" alt="B&L Construções" className="h-16" />
               </div>
-              <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
+              <p className="text-slate-300 text-sm leading-relaxed max-w-xs font-light">
                 Excelência em construção civil, remodelações e reabilitação. Transformamos projetos em realidade com rigor técnico e compromisso.
               </p>
               <div className="flex gap-4 pt-2">
