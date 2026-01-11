@@ -46,7 +46,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-0 group">
-              <img src="/images/logo.png" alt="B&L Construções" className="h-20 transition-transform group-hover:scale-105" />
+              <img src="/images/logo.png" alt="B&L Construções" className="h-20 transition-transform group-hover:scale-105" style={{width: '200px', height: '135px'}} />
             </a>
           </Link>
 
