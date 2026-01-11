@@ -46,7 +46,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contactos">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold text-base px-8 py-6 rounded-none h-auto group">
-                  PEDIR ORÇAMENTO
+                  SOLICITAR ORÇAMENTO
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -380,7 +380,7 @@ export default function Home() {
             <div className="relative z-10 shrink-0">
               <Link href="/contactos">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 py-8 rounded-none shadow-lg">
-                  PEDIR ORÇAMENTO AGORA
+                  SOLICITAR ORÇAMENTO AGORA
                 </Button>
               </Link>
             </div>

@@ -9,7 +9,7 @@ export default function About() {
     <div className="flex flex-col">
       <SEO 
         title="Sobre Nós - B&L Construções" 
-        description="Conheça a história, a equipa e os valores da B&L Construções. Rigor, transparência e qualidade desde 2008."
+        description="Conheça a história, a equipa e os valores da B&L Construções. Rigor, transparência e qualidade desde 2019."
       />
       {/* Header */}
       <section className="bg-slate-900 py-20 relative overflow-hidden">
@@ -18,7 +18,7 @@ export default function About() {
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Quem Somos</span>
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Sobre a B&L Construções</h1>
           <p className="text-xl text-slate-300 max-w-2xl font-light border-l-2 border-secondary pl-6">
-            Mais do que construtores, somos parceiros na concretização dos seus projetos. Rigor, transparência e qualidade desde 2008.
+            Mais do que construtores, somos parceiros na concretização dos seus projetos. Rigor, transparência e qualidade desde 2019.
           </p>
         </div>
       </section>
@@ -32,13 +32,13 @@ export default function About() {
               <h2 className="text-3xl font-heading font-bold text-primary mb-6">A Nossa História</h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Fundada em 2008, a B&L Construções nasceu da vontade de dois engenheiros civis de criar uma empresa que se diferenciasse pelo rigor técnico e pelo cumprimento escrupuloso de prazos – duas das maiores lacunas no setor da construção em Portugal.
+                  Fundada em 2019, a B&L Construções nasceu da vontade de profissionais experientes em construção civil de criar uma empresa que se diferenciasse pelo rigor técnico, transparência e cumprimento escrupuloso de prazos.
                 </p>
                 <p>
-                  Ao longo de mais de 15 anos, crescemos de forma sustentada, apostando na formação contínua da nossa equipa e na aquisição de equipamentos próprios, o que nos permite ter um controlo total sobre a qualidade e o ritmo das obras.
+                  Com uma equipa de 10 colaboradores altamente qualificados, especializamo-nos em obras residenciais, remodelações e, particularmente, em pintura e reabilitação de fachadas de prédios para empresas de condomínio na Margem Sul.
                 </p>
                 <p>
-                  Hoje, somos uma referência na construção de moradias e na reabilitação urbana, com um portfólio que fala por si e uma carteira de clientes fidelizados que são a nossa melhor publicidade.
+                  Hoje, somos uma referência na região de Palmela e arredores, com um portfólio sólido de obras bem executadas e uma carteira de clientes fidelizados que são a nossa melhor publicidade.
                 </p>
               </div>
 
@@ -115,15 +115,15 @@ export default function About() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
             <div>
-              <div className="text-4xl font-heading font-bold text-secondary mb-2">15+</div>
+              <div className="text-4xl font-heading font-bold text-secondary mb-2">5+</div>
               <div className="text-sm uppercase tracking-wider opacity-80">Anos de Mercado</div>
             </div>
             <div>
-              <div className="text-4xl font-heading font-bold text-secondary mb-2">45</div>
+              <div className="text-4xl font-heading font-bold text-secondary mb-2">10</div>
               <div className="text-sm uppercase tracking-wider opacity-80">Colaboradores</div>
             </div>
             <div>
-              <div className="text-4xl font-heading font-bold text-secondary mb-2">200+</div>
+              <div className="text-4xl font-heading font-bold text-secondary mb-2">50+</div>
               <div className="text-sm uppercase tracking-wider opacity-80">Obras Realizadas</div>
             </div>
             <div>
@@ -143,7 +143,7 @@ export default function About() {
           </p>
           <Link href="/contactos">
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold px-10 py-6 rounded-none">
-              PEDIR ORÇAMENTO
+              SOLICITAR ORÇAMENTO
             </Button>
           </Link>
         </div>

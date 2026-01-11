@@ -69,7 +69,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             ))}
             <Link href="/contactos">
               <Button variant="default" className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none border-l-4 border-primary/20 shadow-sm">
-                PEDIR ORÇAMENTO
+                SOLICITAR ORÇAMENTO
               </Button>
             </Link>
           </nav>
@@ -104,7 +104,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <div className="pt-4 border-t border-border mt-2">
                 <Link href="/contactos">
                   <Button className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none">
-                    PEDIR ORÇAMENTO
+                    SOLICITAR ORÇAMENTO
                   </Button>
                 </Link>
               </div>

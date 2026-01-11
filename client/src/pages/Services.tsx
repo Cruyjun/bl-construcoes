@@ -143,7 +143,7 @@ export default function Services() {
                 
                 <Link href="/contactos">
                   <Button className="bg-primary hover:bg-primary/90 text-white font-bold rounded-none px-8">
-                    PEDIR ORÇAMENTO PARA ISTO
+                    SOLICITAR ORÇAMENTO PARA ISTO
                   </Button>
                 </Link>
               </div>
