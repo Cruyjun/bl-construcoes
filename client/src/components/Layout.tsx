@@ -28,14 +28,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex justify-between items-center">
           <div className="flex gap-6">
             <span className="flex items-center gap-2">
-              <Phone className="h-3 w-3 text-secondary" /> +351 912 345 678
+              <Phone className="h-3 w-3 text-secondary" /> 928 095 224
             </span>
             <span className="flex items-center gap-2">
-              <Mail className="h-3 w-3 text-secondary" /> geral@blconstrucoes.pt
+              <Mail className="h-3 w-3 text-secondary" /> geral@blconstrucoes.com
             </span>
           </div>
           <div className="flex gap-4">
-            <span className="opacity-80">Licença IMPIC: 123456</span>
+            <span className="opacity-80">Alvará PAR: 119253</span>
             <span className="text-secondary font-bold">ORÇAMENTOS GRATUITOS</span>
           </div>
         </div>
@@ -46,18 +46,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center gap-2 group">
-              <div className="h-10 w-10 bg-primary flex items-center justify-center text-white font-heading font-bold text-xl border-b-4 border-secondary transition-transform group-hover:scale-105">
-                B&L
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl leading-none text-primary tracking-tight">
-                  CONSTRUÇÕES
-                </span>
-                <span className="text-[10px] font-medium text-muted-foreground tracking-widest uppercase">
-                  Engenharia & Remodelação
-                </span>
-              </div>
+            <a className="flex items-center gap-3 group">
+              <img src="/images/logo.png" alt="B&L Construções" className="h-12 transition-transform group-hover:scale-105" />
             </a>
           </Link>
 
@@ -193,11 +183,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-secondary shrink-0" />
-                  <span>+351 912 345 678</span>
+                  <span>928 095 224</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-secondary shrink-0" />
-                  <span>geral@blconstrucoes.pt</span>
+                  <span>geral@blconstrucoes.com</span>
                 </li>
               </ul>
             </div>
@@ -219,11 +209,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/351912345678"
+        href="https://wa.me/351928095224"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center"
-        aria-label="Contactar via WhatsApp"
+        aria-label="Contactar via WhatsApp (928 095 224)"
       >
         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
       </a>

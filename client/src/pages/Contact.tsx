@@ -68,7 +68,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Telefone</h3>
                       <p className="text-muted-foreground text-sm">
-                        +351 912 345 678<br />
+                        928 095 224<br />
                         <span className="text-xs text-slate-400">(Chamada para rede móvel nacional)</span>
                       </p>
                     </div>
@@ -81,8 +81,9 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Email</h3>
                       <p className="text-muted-foreground text-sm">
-                        geral@blconstrucoes.pt<br />
-                        orcamentos@blconstrucoes.pt
+                        <strong>Geral:</strong> geral@blconstrucoes.com<br />
+                        <strong>Orçamentos:</strong> orcamentos@blconstrucoes.com<br />
+                        <strong>Contacto:</strong> contacto@blconstrucoes.com
                       </p>
                     </div>
                   </div>
