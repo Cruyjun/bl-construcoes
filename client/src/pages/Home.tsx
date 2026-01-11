@@ -189,44 +189,40 @@ export default function Home() {
               <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Portfólio</span>
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary">Obras Recentes</h2>
             </div>
-            <Link href="/portfolio">
-              <Button variant="outline" className="hidden md:flex border-primary text-primary hover:bg-primary hover:text-white rounded-none">
-                VER TODOS OS PROJETOS
-              </Button>
-            </Link>
+
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Project 1 - Reabilitação de Fachadas */}
+            {/* Project 1 - Remodelação de Interiores */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
-                src="/images/reabilitacao-fachada.jpg" 
-                alt="Reabilitação de Fachadas" 
+                src="/images/remodelacao-interiores.jpg" 
+                alt="Remodelação de Interiores" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+              <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Remodelação</span>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Remodelação de Interiores</h3>
+                <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
+                  Transformação completa de espaços interiores com novos acabamentos e layout.
+                </p>
+              </div>
+            </div>
+
+            {/* Project 2 - Reabilitação de Fachadas em Rappel */}
+            <div className="group relative h-[400px] overflow-hidden cursor-pointer">
+              <img 
+                src="/images/reabilitacao-rappel.jpg" 
+                alt="Reabilitação de Fachadas em Rappel" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Reabilitação</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Reabilitação de Fachadas</h3>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Reabilitação em Rappel</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
-                  Trabalho profissional com impermeabilização e pintura de fachadas na Margem Sul.
-                </p>
-              </div>
-            </div>
-
-            {/* Project 2 - Moradia em Palmela */}
-            <div className="group relative h-[400px] overflow-hidden cursor-pointer">
-              <img 
-                src="/images/moradia-palmela.jpg" 
-                alt="Moradia em Palmela" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-              <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Construção</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia em Palmela</h3>
-                <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
-                  Construção de moradia unifamiliar moderna com acabamentos de qualidade.
+                  Trabalho em altura com técnicas de rappel para reabilitação segura de fachadas.
                 </p>
               </div>
             </div>
