@@ -47,7 +47,7 @@ export default function Services() {
         "Impermeabilizações",
         "Reabilitação de áreas comuns e escadas"
       ],
-      image: "/images/ymWYoJcdNWjH.jpg"
+      image: "/images/reabilitacao-edificios.png"
     },
     {
       id: "obras-comerciais",
@@ -106,11 +106,11 @@ export default function Services() {
               {/* Image Side */}
               <div className="w-full md:w-1/2 relative group">
                 <div className="absolute inset-0 border-2 border-secondary translate-x-4 translate-y-4 hidden md:block transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
-                <div className="relative h-[300px] md:h-[400px] overflow-hidden bg-slate-200">
+                <div className="relative h-[300px] md:h-[400px] overflow-hidden bg-slate-200 flex items-center justify-center">
                   <img 
                     src={service.image} 
                     alt={service.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
                 </div>
