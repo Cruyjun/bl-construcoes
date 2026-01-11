@@ -16,7 +16,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Serviços", href: "/servicos" },
-    { label: "Portfólio", href: "/portfolio" },
     { label: "Sobre", href: "/sobre" },
     { label: "Contactos", href: "/contactos" },
   ];
@@ -148,7 +147,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-3 text-sm text-slate-300">
                 <li><Link href="/"><a className="hover:text-secondary transition-colors">Início</a></Link></li>
                 <li><Link href="/servicos"><a className="hover:text-secondary transition-colors">Serviços</a></Link></li>
-                <li><Link href="/portfolio"><a className="hover:text-secondary transition-colors">Portfólio</a></Link></li>
                 <li><Link href="/sobre"><a className="hover:text-secondary transition-colors">Sobre Nós</a></Link></li>
                 <li><Link href="/contactos"><a className="hover:text-secondary transition-colors">Contactos</a></Link></li>
               </ul>

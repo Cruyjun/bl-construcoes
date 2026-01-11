@@ -197,48 +197,42 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Project 1 */}
+            {/* Project 1 - Reabilitação de Fachadas */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
-                src="/images/4v18uZuDY6wW.jpeg" 
-                alt="Moradia Moderna" 
+                src="/images/reabilitacao-fachada.jpg" 
+                alt="Reabilitação de Fachadas" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Construção Nova</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia T4 em Cascais</h3>
+                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Reabilitação</span>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Reabilitação de Fachadas</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
-                  Projeto chave-na-mão com acabamentos de luxo e piscina infinita.
+                  Trabalho profissional com impermeabilização e pintura de fachadas na Margem Sul.
                 </p>
               </div>
             </div>
 
-            {/* Project 2 */}
+            {/* Project 2 - Moradia em Palmela */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
-                src="/images/JmNYl3ewOGb6.jpg" 
-                alt="Remodelação Interior" 
+                src="/images/moradia-palmela.jpg" 
+                alt="Moradia em Palmela" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Remodelação</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Apartamento Chiado</h3>
+                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Construção</span>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia em Palmela</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
-                  Renovação total mantendo traça antiga, com novos sistemas de climatização.
+                  Construção de moradia unifamiliar moderna com acabamentos de qualidade.
                 </p>
               </div>
             </div>
           </div>
           
-          <div className="mt-8 md:hidden">
-            <Link href="/portfolio">
-              <Button className="w-full border-primary text-primary hover:bg-primary hover:text-white rounded-none" variant="outline">
-                VER TODOS OS PROJETOS
-              </Button>
-            </Link>
-          </div>
+
         </div>
       </section>
 
