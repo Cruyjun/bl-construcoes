@@ -81,9 +81,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Email</h3>
                       <p className="text-muted-foreground text-sm">
-                        <strong>Geral:</strong> <a href="mailto:geral@blconstrucoes.com" className="hover:text-secondary transition-colors">geral@blconstrucoes.com</a><br />
-                        <strong>Orçamentos:</strong> <a href="mailto:orcamentos@blconstrucoes.com" className="hover:text-secondary transition-colors">orcamentos@blconstrucoes.com</a><br />
-                        <strong>Contacto:</strong> <a href="mailto:contacto@blconstrucoes.com" className="hover:text-secondary transition-colors">contacto@blconstrucoes.com</a>
+                        <a href="mailto:orcamentos@blconstrucoes.com" className="hover:text-secondary transition-colors">orcamentos@blconstrucoes.com</a>
                       </p>
                     </div>
                   </div>
