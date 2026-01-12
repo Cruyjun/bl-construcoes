@@ -130,10 +130,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Excelência em construção civil, remodelações e reabilitação. Transformamos projetos em realidade com rigor técnico e compromisso.
               </p>
               <div className="flex gap-4 pt-2">
-                <a href="https://www.instagram.com/b.lconstrucao/p/" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white">
+                <a href="https://www.instagram.com/b.lconstrucao/p/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white">
                   <Instagram className="h-4 w-4" />
                 </a>
-                <a href="https://www.facebook.com/share/1BxK6zjjuV/" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white">
+                <a href="https://www.facebook.com/share/1BxK6zjjuV/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white">
                   <Facebook className="h-4 w-4" />
                 </a>
               </div>
