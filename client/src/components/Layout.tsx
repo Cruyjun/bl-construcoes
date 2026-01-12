@@ -29,9 +29,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <span className="flex items-center gap-2">
               <Phone className="h-3 w-3 text-secondary" /> 928 095 224
             </span>
-            <span className="flex items-center gap-2">
+            <a href="mailto:geral@blconstrucoes.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Mail className="h-3 w-3 text-secondary" /> geral@blconstrucoes.com
-            </span>
+            </a>
           </div>
           <div className="flex gap-4">
             <span className="opacity-80">Alvará PAR: 119253</span>
@@ -182,7 +182,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-secondary shrink-0" />
-                  <span>geral@blconstrucoes.com</span>
+                  <a href="mailto:geral@blconstrucoes.com" className="hover:text-secondary transition-colors">geral@blconstrucoes.com</a>
                 </li>
               </ul>
             </div>
