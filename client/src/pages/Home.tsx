@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
 
 export default function Home() {
+
   return (
     <div className="flex flex-col gap-0">
       <SEO />
