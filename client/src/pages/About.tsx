@@ -123,7 +123,7 @@ export default function About() {
               <div className="text-sm uppercase tracking-wider opacity-80">Colaboradores</div>
             </div>
             <div>
-              <div className="text-4xl font-heading font-bold text-secondary mb-2">50+</div>
+              <div className="text-4xl font-heading font-bold text-secondary mb-2">200+</div>
               <div className="text-sm uppercase tracking-wider opacity-80">Obras Realizadas</div>
             </div>
             <div>
