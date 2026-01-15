@@ -1,8 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Ruler, Hammer, HardHat, Building2, Home as HomeIcon } from "lucide-react";
 import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
-
+import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
 
 export default function Home() {
@@ -40,7 +39,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed font-light border-l-2 border-secondary pl-6">
-              Especialistas em moradias, remodelações e reabilitação. Transformamos a sua visão em obra feita com cumprimento rigoroso de prazos.
+              Especialistas em moradias, remodelações e reabilitação na Área Metropolitana de Lisboa. Transformamos a sua visão em obra feita com cumprimento rigoroso de prazos.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -98,23 +97,12 @@ export default function Home() {
                   <HomeIcon className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-4">Construção de Moradias</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Construção chave-na-mão de moradias unifamiliares. Acompanhamento desde o projeto de arquitetura até à entrega da chave.
-                </p>
-                <ul className="space-y-2 mb-8">
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Estrutura e Alvenarias
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Acabamentos Premium
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Eficiência Energética
-                  </li>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Construção de moradias unifamiliares do zero, com projetos personalizados e acabamentos de qualidade superior.</p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Projetos personalizados</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Acabamentos premium</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Cronograma rigoroso</li>
                 </ul>
-                <Link href="/servicos" className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
-                  Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
               </div>
             </div>
 
@@ -125,24 +113,13 @@ export default function Home() {
                 <div className="w-14 h-14 bg-slate-100 flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
                   <Hammer className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Remodelações</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Renovação completa de interiores para apartamentos e moradias. Cozinhas, casas de banho e espaços open-space modernos.
-                </p>
-                <ul className="space-y-2 mb-8">
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Demolições Controladas
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Redes Técnicas Novas
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Carpintaria à Medida
-                  </li>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Remodelações Interiores</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Transformação completa de espaços interiores com design moderno, materiais de qualidade e execução impecável.</p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Cozinhas e casas de banho</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pisos e revestimentos</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Acabamentos premium</li>
                 </ul>
-                <Link href="/servicos" className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
-                  Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
               </div>
             </div>
 
@@ -153,24 +130,13 @@ export default function Home() {
                 <div className="w-14 h-14 bg-slate-100 flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
                   <Building2 className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Reabilitação</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Recuperação de edifícios antigos e fachadas. Respeito pela traça original com introdução de conforto moderno.
-                </p>
-                <ul className="space-y-2 mb-8">
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Reforço Estrutural
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Tratamento de Fachadas
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 text-secondary" /> Impermeabilizações
-                  </li>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Reabilitação de Edifícios</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Reabilitação completa de fachadas, impermeabilização e reparação estrutural com técnicas modernas e seguras.</p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Reabilitação de fachadas</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Trabalho em altura (rappel)</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Impermeabilização</li>
                 </ul>
-                <Link href="/servicos" className="inline-flex items-center text-primary font-bold text-sm uppercase tracking-wide hover:text-secondary transition-colors">
-                  Saber Mais <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
               </div>
             </div>
           </div>
@@ -178,21 +144,19 @@ export default function Home() {
       </section>
 
       {/* FEATURED PROJECTS */}
-      <section className="py-20 bg-slate-50 border-y border-border">
+      <section className="py-20 md:py-32 bg-slate-900 text-white">
         <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-            <div>
-              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Portfólio</span>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary">Obras Recentes</h2>
-            </div>
-
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Nosso Trabalho</span>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Projetos em Destaque</h2>
+            <p className="text-slate-300">Conheça alguns dos nossos projetos mais recentes realizados na Área Metropolitana de Lisboa.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Project 1 - Reabilitação de Fachadas */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
-                src="/images/reabilitacao-fachada.jpg" 
+                src="/images/fachada1.jpg" 
                 alt="Reabilitação de Fachadas" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -210,13 +174,13 @@ export default function Home() {
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
                 src="/images/moradia-palmela.jpg" 
-                alt="Moradia em Palmela" 
+                alt="Moradia - Área Metropolitana" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Construção</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia em Palmela</h3>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia - Área Metropolitana</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
                   Construção de moradia unifamiliar moderna com acabamentos de qualidade.
                 </p>
@@ -400,6 +364,75 @@ export default function Home() {
                   SOLICITAR ORÇAMENTO AGORA
                 </Button>
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-16">
+              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Dúvidas Frequentes</span>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">Perguntas Frequentes</h2>
+              <p className="text-muted-foreground text-lg">Respostas às dúvidas mais comuns sobre os nossos serviços de construção e remodelação.</p>
+            </div>
+
+            <div className="space-y-4">
+              {[
+                {
+                  q: "Quanto custa um orçamento?",
+                  a: "O orçamento é gratuito. Cobramos apenas 25€ de custo de deslocação, que é reembolsável se contratar os nossos serviços."
+                },
+                {
+                  q: "Qual é o tempo médio de uma obra?",
+                  a: "Depende da complexidade do projeto. Uma remodelação simples leva 2-4 semanas, enquanto uma construção nova pode levar 6-12 meses. Fornecemos um cronograma detalhado no orçamento."
+                },
+                {
+                  q: "Vocês trabalham em toda a Área Metropolitana de Lisboa?",
+                  a: "Sim, trabalhamos em toda a Área Metropolitana de Lisboa, incluindo Margem Sul, Margem Norte e zona de Cascais. Deslocamo-nos para qualquer local da região."
+                },
+                {
+                  q: "Qual é o processo de contratação?",
+                  a: "1. Solicita orçamento; 2. Visitamos o local e analisamos o projeto; 3. Apresentamos proposta detalhada; 4. Assinamos contrato; 5. Iniciamos a obra com cronograma definido."
+                },
+                {
+                  q: "Têm garantia nas obras?",
+                  a: "Sim, todas as nossas obras têm garantia de 2 anos. Cobrimos defeitos de construção, impermeabilização e acabamentos. Oferecemos também assistência técnica permanente."
+                },
+                {
+                  q: "Como é o acompanhamento durante a obra?",
+                  a: "Mantemos contacto permanente com o cliente. Fornecemos relatórios semanais, fotos de progresso e estamos disponíveis para esclarecimentos. O cliente pode visitar a obra sempre que desejar."
+                },
+                {
+                  q: "Vocês fazem remodelações interiores?",
+                  a: "Sim, realizamos remodelações completas de interiores, incluindo cozinhas, casas de banho, pisos, paredes e acabamentos. Trabalhamos com design moderno e materiais de qualidade."
+                },
+                {
+                  q: "Fazem reabilitação de fachadas?",
+                  a: "Sim, especializamo-nos em reabilitação de fachadas, incluindo trabalho em altura com técnicas de rappel. Realizamos impermeabilização, pintura e reparação estrutural."
+                },
+                {
+                  q: "Qual é a forma de pagamento?",
+                  a: "Oferecemos diferentes opções: pagamento à vista, parcelado ou financiamento. Discutimos as melhores condições no contrato. Aceitamos transferência bancária e cheque."
+                },
+                {
+                  q: "Têm referências de clientes?",
+                  a: "Sim, temos dezenas de clientes satisfeitos. Podemos fornecer contactos de referência e fotos de obras realizadas. Visite o nosso Instagram para ver projetos recentes."
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="border border-border bg-white p-6 hover:border-secondary transition-colors">
+                  <h3 className="text-lg font-heading font-bold text-primary mb-3 flex items-start gap-2">
+                    <span className="text-secondary font-bold text-xl">Q:</span>
+                    {item.q}
+                  </h3>
+                  <p className="text-muted-foreground ml-6 leading-relaxed">
+                    <span className="text-secondary font-bold">A: </span>
+                    {item.a}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
