@@ -156,7 +156,7 @@ export default function Home() {
             {/* Project 1 - Reabilitação de Fachadas */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
-                src="/images/fachada1.jpg" 
+                src="/images/reabilitacao-fachada.jpg" 
                 alt="Reabilitação de Fachadas" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -180,7 +180,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Construção</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia - Área Metropolitana</h3>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia em Palmela</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
                   Construção de moradia unifamiliar moderna com acabamentos de qualidade.
                 </p>
