@@ -85,7 +85,7 @@ A nossa equipa analisará o seu pedido e entrará em contacto dentro de 24 horas
 Atenciosamente,
 B&L Construções
 Tel: 928 095 224
-Email: info@blconstrucoes.com
+Email: geral@blconstrucoes.com
           `;
 
           // Email para a empresa (notificação)
@@ -109,6 +109,7 @@ Data: ${new Date().toLocaleString('pt-PT')}
           const clientResult = await transporter.sendMail({
             from: ENV.smtpUser,
             to: input.email,
+            replyTo: ENV.contactTo,
             subject: "Confirmação de Pedido de Orçamento - B&L Construções",
             text: clientEmailContent,
           });
