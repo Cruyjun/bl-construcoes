@@ -24,17 +24,45 @@ export const appRouter = router({
       .input((data: any) => data)
       .mutation(async ({ input }) => {
         try {
+          console.log('[SMTP] Iniciando envio de email...');
+          console.log('[SMTP] Host:', ENV.smtpHost);
+          console.log('[SMTP] Port:', ENV.smtpPort);
+          console.log('[SMTP] User:', ENV.smtpUser);
+          console.log('[SMTP] Contact To:', ENV.contactTo);
+          
           // Criar transporter SMTP
           const transporter = nodemailer.createTransport({
             host: ENV.smtpHost,
             port: ENV.smtpPort,
-            secure: ENV.smtpPort === 465, // true para porta 465, false para outras
+            secure: ENV.smtpPort === 465, // true para 465, false para 587
+            requireTLS: true,
             auth: {
               user: ENV.smtpUser,
               pass: ENV.smtpPass,
             },
+            tls: {
+              rejectUnauthorized: false,
+            },
+            logger: true,
+            debug: true,
+          });
+          
+          // Verificar conexão SMTP
+          console.log('[SMTP] Verificando conexão...');
+          await new Promise((resolve, reject) => {
+            transporter.verify((error, success) => {
+              if (error) {
+                console.error('[SMTP] Erro na verificação:', error);
+                reject(error);
+              } else {
+                console.log('[SMTP] Conexão verificada com sucesso!');
+                resolve(success);
+              }
+            });
           });
 
+          console.log('[SMTP] Conexão OK. Preparando emails...');
+          
           // Email para o cliente (confirmação)
           const clientEmailContent = `
 Olá ${input.name},
@@ -77,25 +105,29 @@ Data: ${new Date().toLocaleString('pt-PT')}
           `;
 
           // Enviar email para o cliente
-          await transporter.sendMail({
+          console.log('[SMTP] Enviando email para cliente:', input.email);
+          const clientResult = await transporter.sendMail({
             from: ENV.smtpUser,
             to: input.email,
             subject: "Confirmação de Pedido de Orçamento - B&L Construções",
             text: clientEmailContent,
           });
+          console.log('[SMTP] Email cliente enviado:', clientResult.messageId);
 
           // Enviar email para a empresa
-          await transporter.sendMail({
+          console.log('[SMTP] Enviando email para empresa:', ENV.contactTo);
+          const companyResult = await transporter.sendMail({
             from: ENV.smtpUser,
             to: ENV.contactTo,
             subject: `Novo Pedido de Orçamento - ${input.name}`,
             text: companyEmailContent,
           });
+          console.log('[SMTP] Email empresa enviado:', companyResult.messageId);
 
-          console.log('Emails enviados com sucesso para:', input.email, 'e', ENV.contactTo);
+          console.log('[SMTP] Emails enviados com sucesso!');
           return { success: true, message: 'Emails enviados com sucesso' };
         } catch (error) {
-          console.error('Erro ao enviar email:', error);
+          console.error('[SMTP] Erro ao enviar email:', error);
           return { success: false, message: 'Erro ao enviar email' };
         }
       }),
