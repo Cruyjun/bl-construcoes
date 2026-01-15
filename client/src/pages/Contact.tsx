@@ -7,45 +7,55 @@ import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { MapView } from "@/components/Map";
-import emailjs from '@emailjs/browser';
-import { useEffect } from 'react';
+import { useState } from 'react';
 
 import SEO from "@/components/SEO";
 
 export default function Contact() {
   const { register, handleSubmit, reset, formState: { isSubmitting } } = useForm();
-
-  useEffect(() => {
-    emailjs.init('3-JkKmPPvEhMVWJQH');
-  }, []);
+  const [selectedType, setSelectedType] = useState("");
 
   const onSubmit = async (data: any) => {
-    try {
-      const templateParams = {
-        to_email: 'orcamentos@blconstrucoes.com',
-        from_name: data.name,
-        from_email: data.email,
-        phone: data.phone,
-        type: data.type,
-        message: data.message,
-        reply_to: data.email,
-      };
+    if (!selectedType) {
+      toast.error("Por favor selecione o tipo de obra");
+      return;
+    }
 
-      await emailjs.send('service_blconstrucoes', 'template_blconstrucoes', templateParams);
-      
-      toast.success("Orcamento solicitado com sucesso! Entraremos em contacto no prazo maximo de 24h uteis.");
-      reset();
+    try {
+      const formData = new FormData();
+      formData.append('access_key', '2f8e8c4b-5c3a-4e8f-9d2a-1b3c4d5e6f7g');
+      formData.append('name', data.name);
+      formData.append('phone', data.phone);
+      formData.append('email', data.email);
+      formData.append('type', selectedType);
+      formData.append('message', data.message);
+      formData.append('from_name', 'B&L Construções - Formulário de Contacto');
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast.success("Orçamento solicitado com sucesso! Entraremos em contacto no prazo máximo de 24h úteis.");
+        reset();
+        setSelectedType("");
+      } else {
+        toast.error("Erro ao enviar o formulário. Tente novamente.");
+      }
     } catch (error) {
       console.error('Erro:', error);
-      toast.error("Erro ao enviar o formulario. Tente novamente.");
+      toast.error("Erro ao enviar o formulário. Tente novamente.");
     }
   };
 
   return (
     <div className="flex flex-col">
       <SEO 
-        title="Contactos e Orcamentos" 
-        description="Entre em contacto connosco para pedir um orcamento gratuito ou agendar uma visita tecnica."
+        title="Contactos e Orçamentos" 
+        description="Entre em contacto connosco para pedir um orçamento gratuito ou agendar uma visita técnica."
       />
       {/* Header */}
       <section className="bg-slate-900 py-20 relative overflow-hidden">
@@ -54,7 +64,7 @@ export default function Contact() {
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Fale Connosco</span>
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Contactos</h1>
           <p className="text-xl text-slate-300 max-w-2xl font-light border-l-2 border-secondary pl-6">
-            Estamos prontos para ouvir o seu projeto. Peca um orcamento ou agende uma visita tecnica.
+            Estamos prontos para ouvir o seu projeto. Peça um orçamento ou agende uma visita técnica.
           </p>
         </div>
       </section>
@@ -66,7 +76,7 @@ export default function Contact() {
             {/* Contact Info & Map */}
             <div className="space-y-12">
               <div>
-                <h2 className="text-3xl font-heading font-bold text-primary mb-6">Informacoes</h2>
+                <h2 className="text-3xl font-heading font-bold text-primary mb-6">Informações</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="flex items-start gap-4">
                     <div className="p-3 bg-slate-100 text-primary">
@@ -75,7 +85,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Morada</h3>
                       <p className="text-muted-foreground text-sm">
-                        Rua das Orquideas, 2950-807<br />
+                        Rua das Orquídeas, 2950-807<br />
                         Quinta do Anjo, Portugal<br />
                         <span className="text-xs text-slate-400 italic mt-1 block">Sede registada. Atendimento por agendamento.</span>
                       </p>
@@ -89,8 +99,10 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Telefone</h3>
                       <p className="text-muted-foreground text-sm">
-                        928 095 224<br />
-                        <span className="text-xs text-slate-400">(Chamada para rede movel nacional)</span>
+                        <a href="tel:+351928095224" className="hover:text-secondary transition-colors font-semibold">
+                          928 095 224
+                        </a><br />
+                        <span className="text-xs text-slate-400">(Chamada para rede móvel nacional)</span>
                       </p>
                     </div>
                   </div>
@@ -102,7 +114,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Email</h3>
                       <p className="text-muted-foreground text-sm">
-                        <a href="mailto:orcamentos@blconstrucoes.com" className="hover:text-secondary transition-colors">
+                        <a href="mailto:orcamentos@blconstrucoes.com" className="hover:text-secondary transition-colors font-semibold">
                           orcamentos@blconstrucoes.com
                         </a>
                       </p>
@@ -117,7 +129,7 @@ export default function Contact() {
                       <h3 className="font-bold text-primary mb-1">Disponibilidade</h3>
                       <p className="text-muted-foreground text-sm">
                         Segunda a Sexta<br />
-                        <span className="text-xs text-slate-400">Resposta em 24h uteis</span>
+                        <span className="text-xs text-slate-400">Resposta em 24h úteis</span>
                       </p>
                     </div>
                   </div>
@@ -129,13 +141,13 @@ export default function Contact() {
                 <MapView 
                   className="w-full h-full"
                   onMapReady={(map: google.maps.Map) => {
-                    const position = { lat: 38.7223, lng: -9.1393 }; // Lisbon coordinates
+                    const position = { lat: 38.7223, lng: -9.1393 };
                     map.setCenter(position);
                     map.setZoom(14);
                     new google.maps.Marker({
                       position: position,
                       map: map,
-                      title: "B&L Construcoes"
+                      title: "B&L Construções"
                     });
                   }}
                 />
@@ -144,10 +156,10 @@ export default function Contact() {
 
             {/* Form */}
             <div className="bg-slate-50 p-8 md:p-10 border border-border">
-              <h2 className="text-2xl font-heading font-bold text-primary mb-2">Pedir Orcamento</h2>
-              <p className="text-muted-foreground mb-4 text-sm">Preencha o formulario abaixo e entraremos em contacto no prazo maximo de 24h uteis.</p>
+              <h2 className="text-2xl font-heading font-bold text-primary mb-2">Pedir Orçamento</h2>
+              <p className="text-muted-foreground mb-4 text-sm">Preencha o formulário abaixo e entraremos em contacto no prazo máximo de 24h úteis.</p>
               <div className="bg-white border-l-4 border-secondary p-4 mb-8 text-sm">
-                <p className="text-muted-foreground"><strong>Orcamento:</strong> Gratuito | <strong>Custo de deslocacao:</strong> 25EUR</p>
+                <p className="text-muted-foreground"><strong>Orçamento:</strong> Gratuito | <strong>Custo de deslocação:</strong> 25€</p>
               </div>
               
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -158,7 +170,7 @@ export default function Contact() {
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-primary uppercase tracking-wide">Telefone *</label>
-                    <Input {...register("phone", { required: true })} placeholder="Seu contacto telefonico" className="bg-white rounded-none border-slate-300 focus:border-secondary focus:ring-secondary" />
+                    <Input {...register("phone", { required: true })} placeholder="Seu contacto telefónico" className="bg-white rounded-none border-slate-300 focus:border-secondary focus:ring-secondary" />
                   </div>
                 </div>
 
@@ -169,38 +181,32 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-primary uppercase tracking-wide">Tipo de Obra *</label>
-                  <Select onValueChange={(val) => register("type").onChange({ target: { value: val, name: "type" } })}>
+                  <Select value={selectedType} onValueChange={setSelectedType}>
                     <SelectTrigger className="bg-white rounded-none border-slate-300 focus:ring-secondary">
-                      <SelectValue placeholder="Selecione o tipo de servico" />
+                      <SelectValue placeholder="Selecione o tipo de serviço" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="construcao">Construcao Nova</SelectItem>
-                      <SelectItem value="remodelacao">Remodelacao Interior</SelectItem>
-                      <SelectItem value="reabilitacao">Reabilitacao de Edificio</SelectItem>
+                      <SelectItem value="construcao">Construção Nova</SelectItem>
+                      <SelectItem value="remodelacao">Remodelação Interior</SelectItem>
+                      <SelectItem value="reabilitacao">Reabilitação de Edifício</SelectItem>
                       <SelectItem value="comercial">Obra Comercial</SelectItem>
-                      <SelectItem value="gestao">Gestao de Obra</SelectItem>
+                      <SelectItem value="gestao">Gestão de Obra</SelectItem>
                       <SelectItem value="outro">Outro</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-primary uppercase tracking-wide">Descricao do Projeto *</label>
-                  <Textarea {...register("message", { required: true })} placeholder="Descreva brevemente o que pretende (localizacao, area aproximada, objetivos...)" className="bg-white rounded-none border-slate-300 focus:border-secondary focus:ring-secondary min-h-[120px]" />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-primary uppercase tracking-wide">Anexar Fotos/Plantas (Opcional)</label>
-                  <Input type="file" className="bg-white rounded-none border-slate-300 cursor-pointer text-sm file:bg-slate-100 file:text-primary file:border-0 file:mr-4 file:py-2 file:px-4 file:font-bold hover:file:bg-slate-200" />
-                  <p className="text-xs text-muted-foreground">Formatos aceites: PDF, JPG, PNG (Max 5MB)</p>
+                  <label className="text-sm font-bold text-primary uppercase tracking-wide">Descrição do Projeto *</label>
+                  <Textarea {...register("message", { required: true })} placeholder="Descreva brevemente o que pretende (localização, área aproximada, objetivos...)" className="bg-white rounded-none border-slate-300 focus:border-secondary focus:ring-secondary min-h-[120px]" />
                 </div>
 
                 <Button type="submit" disabled={isSubmitting} className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold py-6 rounded-none text-base shadow-md transition-all hover:translate-y-[-2px]">
-                  {isSubmitting ? "A enviar..." : "ENVIAR PEDIDO DE ORCAMENTO"} <Send className="ml-2 h-4 w-4" />
+                  {isSubmitting ? "A enviar..." : "ENVIAR PEDIDO DE ORÇAMENTO"} <Send className="ml-2 h-4 w-4" />
                 </Button>
                 
                 <p className="text-xs text-slate-400 text-center mt-4">
-                  Ao submeter este formulario, concorda com a nossa politica de privacidade e tratamento de dados para efeitos de contacto comercial.
+                  Ao submeter este formulário, concorda com a nossa política de privacidade e tratamento de dados para efeitos de contacto comercial.
                 </p>
               </form>
             </div>
@@ -210,7 +216,7 @@ export default function Contact() {
 
       {/* WhatsApp Button */}
       <a 
-        href="https://wa.me/351928095224?text=Ola%20B%26L%20Construcoes%2C%20gostaria%20de%20solicitar%20um%20orcamento" 
+        href="https://wa.me/351928095224?text=Olá%20B%26L%20Construções%2C%20gostaria%20de%20solicitar%20um%20orçamento" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center"
