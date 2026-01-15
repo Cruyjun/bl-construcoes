@@ -28,7 +28,7 @@ export default function Contact() {
         name: data.name,
         phone: data.phone,
         email: data.email,
-        type: selectedType,
+        service: selectedType,
         message: data.message,
       });
       
