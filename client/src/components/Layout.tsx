@@ -44,29 +44,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-24 items-center justify-between">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center gap-0 group">
-              <img src="/images/logo.png" alt="B&L Construções" className="h-20 transition-transform group-hover:scale-105" style={{width: '200px', height: '135px'}} />
-            </a>
+          <Link href="/" className="flex items-center gap-0 group">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663290027302/3Zx2uD7myBxbJfhgGteh6M/logo_a7fee36a.png" alt="B&L Construções" className="h-20 transition-transform group-hover:scale-105" style={{width: '200px', height: '135px'}} />
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className={cn(
-                    "text-sm font-medium transition-colors hover:text-secondary uppercase tracking-wide relative py-1",
-                    location === item.href
-                      ? "text-primary font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-secondary"
-                      : "text-muted-foreground"
-                  )}
-                >
-                  {item.label}
-                </a>
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-secondary uppercase tracking-wide relative py-1",
+                  location === item.href
+                    ? "text-primary font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-secondary"
+                    : "text-muted-foreground"
+                )}
+              >
+                {item.label}
               </Link>
             ))}
-            <Link href="/contactos">
+            <Link href="/contactos" asChild>
               <Button variant="default" className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none border-l-4 border-primary/20 shadow-sm">
                 SOLICITAR ORÇAMENTO
               </Button>
@@ -87,21 +85,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="md:hidden border-t border-border bg-background absolute w-full left-0 shadow-lg animate-in slide-in-from-top-5">
             <div className="container py-4 flex flex-col gap-4">
               {navItems.map((item) => (
-                <Link key={item.href} href={item.href}>
-                  <a
-                    className={cn(
-                      "text-base font-medium py-2 border-l-2 pl-4 transition-all",
-                      location === item.href
-                        ? "border-secondary text-primary bg-muted/50"
-                        : "border-transparent text-muted-foreground hover:text-primary hover:border-border"
-                    )}
-                  >
-                    {item.label}
-                  </a>
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "text-base font-medium py-2 border-l-2 pl-4 transition-all",
+                    location === item.href
+                      ? "border-secondary text-primary bg-muted/50"
+                      : "border-transparent text-muted-foreground hover:text-primary hover:border-border"
+                  )}
+                >
+                  {item.label}
                 </Link>
               ))}
               <div className="pt-4 border-t border-border mt-2">
-                <Link href="/contactos">
+                <Link href="/contactos" asChild>
                   <Button className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none">
                     SOLICITAR ORÇAMENTO
                   </Button>
@@ -124,7 +122,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Brand Column */}
             <div className="space-y-4">
               <div className="flex items-center gap-0">
-                <img src="/images/logo.png" alt="B&L Construções" className="h-16" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663290027302/3Zx2uD7myBxbJfhgGteh6M/logo_a7fee36a.png" alt="B&L Construções" className="h-16" />
               </div>
               <p className="text-slate-300 text-sm leading-relaxed max-w-xs font-light">
                 Excelência em construção civil, remodelações e reabilitação. Transformamos projetos em realidade com rigor técnico e compromisso.
@@ -145,10 +143,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <span className="w-2 h-2 bg-secondary inline-block"></span> NAVEGAÇÃO
               </h3>
               <ul className="space-y-3 text-sm text-slate-300">
-                <li><Link href="/"><a className="hover:text-secondary transition-colors">Início</a></Link></li>
-                <li><Link href="/servicos"><a className="hover:text-secondary transition-colors">Serviços</a></Link></li>
-                <li><Link href="/sobre"><a className="hover:text-secondary transition-colors">Sobre Nós</a></Link></li>
-                <li><Link href="/contactos"><a className="hover:text-secondary transition-colors">Contactos</a></Link></li>
+                <li><Link href="/" className="hover:text-secondary transition-colors">Início</Link></li>
+                <li><Link href="/servicos" className="hover:text-secondary transition-colors">Serviços</Link></li>
+                <li><Link href="/sobre" className="hover:text-secondary transition-colors">Sobre Nós</Link></li>
+                <li><Link href="/contactos" className="hover:text-secondary transition-colors">Contactos</Link></li>
               </ul>
             </div>
 
