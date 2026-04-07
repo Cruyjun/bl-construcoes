@@ -93,8 +93,8 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Sede</h3>
                       <p className="text-muted-foreground text-sm">
-                        Rua das Orquídeas<br/>
-                        2950-807 Quinta do Anjo<br/>
+                        Rua das Orquédeas 3<br/>
+                        2950-807 Pinhal das Formas<br/>
                         <span className="text-xs italic">Atendimento por agendamento</span>
                       </p>
                     </div>
@@ -116,13 +116,13 @@ export default function Contact() {
               <div className="rounded-lg overflow-hidden border border-border h-96">
                 <MapView 
                   onMapReady={(map) => {
-                    const position = { lat: 38.6547, lng: -8.9066 };
+                    const position = { lat: 38.6103936, lng: -8.9672748 };
                     map.setCenter(position);
                     map.setZoom(15);
                     const marker = new google.maps.Marker({
                       position: position,
                       map: map,
-                      title: "B&L Construções - Quinta do Anjo"
+                      title: "B&L Construções - Rua das Orquédeas 3, Pinhal das Formas"
                     });
                   }}
                 />

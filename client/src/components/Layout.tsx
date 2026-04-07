@@ -172,7 +172,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-4 text-sm text-slate-300">
                 <li className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-secondary shrink-0" />
-                  <span>Rua das Orquídeas, 2950-807<br />Quinta do Anjo, Portugal</span>
+                  <span>Rua das Orquédeas 3, 2950-807<br />Pinhal das Formas, Portugal</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-secondary shrink-0" />
