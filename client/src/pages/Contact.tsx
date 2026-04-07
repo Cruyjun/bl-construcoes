@@ -116,10 +116,13 @@ export default function Contact() {
               <div className="rounded-lg overflow-hidden border border-border h-96">
                 <MapView 
                   onMapReady={(map) => {
+                    const position = { lat: 38.6547, lng: -8.9066 };
+                    map.setCenter(position);
+                    map.setZoom(15);
                     const marker = new google.maps.Marker({
-                      position: { lat: 38.6547, lng: -8.9066 },
+                      position: position,
                       map: map,
-                      title: "B&L Construções"
+                      title: "B&L Construções - Quinta do Anjo"
                     });
                   }}
                 />
