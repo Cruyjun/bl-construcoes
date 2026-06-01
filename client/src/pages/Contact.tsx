@@ -105,7 +105,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Alvará</h3>
                       <p className="text-muted-foreground text-sm">
-                        PAR 119253
+                        Nº 121659 - PAR
                       </p>
                     </div>
                   </div>
