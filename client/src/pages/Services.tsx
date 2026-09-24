@@ -45,7 +45,7 @@ export default function Services() {
         "Reparação e substituição de caleiras",
         "Colocação de tubos de queda",
         "Prevenção e correção de infiltrações",
-        "Materiais Sika, Barbot e CIN"
+        "Soluções adequadas a cada cobertura"
       ],
       image: "/images/reabilitacao-rappel.jpg"
     },
@@ -57,7 +57,7 @@ export default function Services() {
       features: [
         "Preparação e tratamento de superfícies",
         "Pintura de fachadas e zonas comuns",
-        "Soluções Barbot e CIN",
+        "Acabamentos adequados a cada superfície",
         "Reparação de rebocos e acabamentos",
         "Limpeza e entrega cuidada"
       ],

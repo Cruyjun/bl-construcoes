@@ -149,27 +149,9 @@ export default function Home() {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Impermeabilização de telhados</li>
                   <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Caleiras e tubos de queda</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Soluções Sika, Barbot e CIN</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Proteção contra infiltrações</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PARTNER BRANDS */}
-      <section className="py-12 bg-slate-100 border-y border-border">
-        <div className="container">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
-              <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block">Materiais de referência</span>
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary">Trabalhamos com Sika, Barbot e CIN</h2>
-              <p className="text-sm text-muted-foreground mt-2 max-w-2xl">Selecionamos sistemas e produtos adequados a cada fachada, cobertura e superfície para garantir uma intervenção duradoura.</p>
-            </div>
-            <div className="flex flex-wrap gap-3 md:max-w-xs md:justify-end">
-              {['SIKA', 'BARBOT', 'CIN'].map((brand) => (
-                <span key={brand} className="border border-primary/20 bg-white px-5 py-3 text-sm font-heading font-bold tracking-widest text-primary">{brand}</span>
-              ))}
             </div>
           </div>
         </div>
@@ -334,7 +316,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Porquê a B&L</span>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Construímos Confiança, Não Apenas Paredes</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Confiança para contratar com tranquilidade</h2>
               <p className="text-slate-300 text-lg mb-8 leading-relaxed">
                 Sabemos que uma obra é um investimento importante. A nossa equipa garante transparência total, orçamentos detalhados sem surpresas e um acompanhamento técnico permanente.
               </p>
@@ -357,6 +339,16 @@ export default function Home() {
                   <div>
                     <h4 className="text-xl font-bold font-heading mb-1">Equipa Própria</h4>
                     <p className="text-slate-400 text-sm">Profissionais preparados para rapel, andaimes, fachadas e coberturas.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-white/10 flex items-center justify-center shrink-0 border border-white/20">
+                    <Building2 className="h-6 w-6 text-secondary" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold font-heading mb-1">Empresa habilitada</h4>
+                    <p className="text-slate-400 text-sm">Alvará nº 121659 - PAR e experiência em intervenções para edifícios e condomínios.</p>
                   </div>
                 </div>
               </div>
@@ -408,7 +400,7 @@ export default function Home() {
             <div className="text-center mb-16">
               <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Dúvidas Frequentes</span>
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">Perguntas Frequentes</h2>
-              <p className="text-muted-foreground text-lg">Respostas às dúvidas mais comuns sobre os nossos serviços de construção e remodelação.</p>
+              <p className="text-muted-foreground text-lg">Respostas às dúvidas mais comuns sobre reabilitação de edifícios, fachadas e coberturas.</p>
             </div>
 
             <div className="space-y-4">
@@ -418,8 +410,8 @@ export default function Home() {
                   a: "O orçamento é gratuito. Cobramos apenas 25€ de custo de deslocação, que é reembolsável se contratar os nossos serviços."
                 },
                 {
-                  q: "Qual é o tempo médio de uma obra?",
-                  a: "Depende da complexidade do projeto. Uma remodelação simples leva 2-4 semanas, enquanto uma construção nova pode levar 6-12 meses. Fornecemos um cronograma detalhado no orçamento."
+                  q: "Qual é o tempo médio de uma intervenção?",
+                  a: "Depende do estado do edifício, da área e dos trabalhos necessários. Depois da visita técnica, apresentamos um cronograma realista e detalhado."
                 },
                 {
                   q: "Vocês trabalham em toda a Área Metropolitana de Lisboa?",
@@ -438,16 +430,16 @@ export default function Home() {
                   a: "Mantemos contacto permanente com o cliente. Fornecemos relatórios semanais, fotos de progresso e estamos disponíveis para esclarecimentos. O cliente pode visitar a obra sempre que desejar."
                 },
                 {
-                  q: "Vocês fazem remodelações interiores?",
-                  a: "Sim, realizamos remodelações completas de interiores, incluindo cozinhas, casas de banho, pisos, paredes e acabamentos. Trabalhamos com design moderno e materiais de qualidade."
+                  q: "Trabalham com rapel e andaimes?",
+                  a: "Sim. Avaliamos cada edifício e escolhemos o método de acesso mais adequado, entre rapel e andaimes, sempre com foco na segurança e na qualidade da execução."
                 },
                 {
                   q: "Fazem reabilitação de fachadas?",
                   a: "Sim. Realizamos reparação, pintura, capoto e impermeabilização de fachadas, com acesso por rapel ou andaimes conforme as necessidades da obra."
                 },
                 {
-                  q: "Que materiais e marcas utilizam?",
-                  a: "Trabalhamos com marcas de referência como Sika, Barbot e CIN, escolhendo a solução mais adequada para cada superfície e tipo de intervenção."
+                  q: "Como garantem a qualidade da obra?",
+                  a: "Trabalhamos com equipa própria, planeamento claro, acompanhamento semanal e materiais adequados a cada intervenção. O objetivo é entregar um resultado seguro, duradouro e bem executado."
                 },
                 {
                   q: "Têm referências de clientes?",

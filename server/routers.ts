@@ -20,6 +20,9 @@ export const appRouter = router({
   }),
 
   contact: router({
+    status: publicProcedure.query(() => ({
+      configured: ENV.contactTo.length > 0,
+    })),
     sendEmail: publicProcedure
       .input((data: any) => data)
       .mutation(async ({ input }) => {

@@ -1,5 +1,13 @@
 import { describe, it, expect } from 'vitest';
 import { ENV } from './_core/env';
+import { appRouter } from './routers';
+import type { TrpcContext } from './_core/context';
+
+const publicContext: TrpcContext = {
+  user: null,
+  req: {} as TrpcContext['req'],
+  res: {} as TrpcContext['res'],
+};
 
 describe('contact.sendEmail - SMTP Configuration', () => {
   it('deve ter as variáveis SMTP configuradas corretamente', () => {
@@ -26,11 +34,17 @@ describe('contact.sendEmail - SMTP Configuration', () => {
     expect(ENV.smtpHost).toBe('mail.blconstrucoes.com');
   });
 
-  it('deve ter o email de contacto configurado como info@blconstrucoes.com', () => {
-    expect(ENV.contactTo).toBe('info@blconstrucoes.com');
+  it('deve ter o email de contacto configurado como contacto@blconstrucoes.com', () => {
+    expect(ENV.contactTo).toBe('contacto@blconstrucoes.com');
   });
 
-  it('deve ter a porta SMTP configurada como 587 (TLS)', () => {
-    expect(ENV.smtpPort).toBe(587);
+  it('deve ter a porta SMTP configurada como 465 (SSL)', () => {
+    expect(ENV.smtpPort).toBe(465);
+  });
+
+  it('deve confirmar a configuração do destinatário através do endpoint leve', async () => {
+    const result = await appRouter.createCaller(publicContext).contact.status();
+
+    expect(result).toEqual({ configured: true });
   });
 });

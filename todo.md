@@ -7,7 +7,9 @@
 - [x] Validação de formulário de contacto
 - [x] Teste vitest para validar configuração SMTP
 
-## Funcionalidades Planeadas
+## Funcionalidades Planeadas — não implementadas nesta fase pública
+
+> Estas funcionalidades continuam em backlog porque exigem decisões adicionais sobre utilizadores, retenção de dados, canal de notificações, CRM e credenciais/API.
 
 - [ ] Dashboard de gestão de orçamentos
 - [ ] Histórico de pedidos de contacto
