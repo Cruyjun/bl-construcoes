@@ -82,8 +82,8 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-secondary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-bold text-primary mb-1">Email</h3>
-                      <a href="mailto:orcamentos@blconstrucoes.com" className="text-muted-foreground hover:text-secondary transition-colors">
-                        orcamentos@blconstrucoes.com
+                      <a href="mailto:geral@blconstrucoes.com" className="text-muted-foreground hover:text-secondary transition-colors">
+                        geral@blconstrucoes.com
                       </a>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-primary mb-1">Sede</h3>
                       <p className="text-muted-foreground text-sm">
-                        Rua das Orquédeas 3<br/>
+                        Rua das Orquídeas 3<br/>
                         2950-807 Pinhal das Formas<br/>
                         <span className="text-xs italic">Atendimento por agendamento</span>
                       </p>
@@ -122,7 +122,7 @@ export default function Contact() {
                     const marker = new google.maps.Marker({
                       position: position,
                       map: map,
-                      title: "B&L Construções - Rua das Orquédeas 3, Pinhal das Formas"
+                      title: "B&L Construções - Rua das Orquídeas 3, Pinhal das Formas"
                     });
                   }}
                 />
@@ -170,10 +170,11 @@ export default function Contact() {
                           <SelectValue placeholder="Selecione o tipo de obra" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="construcao-moradia">Construção de Moradia</SelectItem>
-                          <SelectItem value="remodelacao-interior">Remodelação Interior</SelectItem>
-                          <SelectItem value="reabilitacao-fachada">Reabilitação de Fachada</SelectItem>
-                          <SelectItem value="reabilitacao-rappel">Reabilitação em Rappel</SelectItem>
+                          <SelectItem value="reabilitacao-edificios">Reabilitação de Edifícios</SelectItem>
+                          <SelectItem value="fachadas">Fachadas, Rapel e Andaimes</SelectItem>
+                          <SelectItem value="impermeabilizacao">Impermeabilização de Telhados</SelectItem>
+                          <SelectItem value="caleiras-tubos-queda">Caleiras e Tubos de Queda</SelectItem>
+                          <SelectItem value="pintura-revestimentos">Pintura e Revestimentos</SelectItem>
                           <SelectItem value="gestao-obra">Gestão de Obra</SelectItem>
                           <SelectItem value="outro">Outro</SelectItem>
                         </SelectContent>

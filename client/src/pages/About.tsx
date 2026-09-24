@@ -35,21 +35,21 @@ export default function About() {
                   Fundada em 2019, a B&L Construções nasceu da vontade de profissionais experientes em construção civil de criar uma empresa que se diferenciasse pelo rigor técnico, transparência e cumprimento escrupuloso de prazos.
                 </p>
                 <p>
-                  Com uma equipa de 10 colaboradores altamente qualificados, especializamo-nos em obras residenciais, remodelações e, particularmente, em pintura e reabilitação de fachadas de prédios para empresas de condomínio na Margem Sul.
+                  Com uma equipa própria de profissionais qualificados, especializamo-nos na reabilitação de edifícios, fachadas e coberturas, incluindo trabalhos em altura por rapel e andaimes.
                 </p>
                 <p>
-                  Hoje, somos uma referência na região de Palmela e arredores, com um portfólio sólido de obras bem executadas e uma carteira de clientes fidelizados que são a nossa melhor publicidade.
+                  Hoje, trabalhamos em toda a Grande Lisboa com foco em condomínios e proprietários que procuram uma intervenção rigorosa: impermeabilização de telhados, manutenção de caleiras e tubos de queda, pintura e recuperação de fachadas.
                 </p>
               </div>
 
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="bg-slate-50 p-6 border-l-4 border-secondary">
                   <h3 className="font-heading font-bold text-primary text-lg mb-2">Missão</h3>
-                  <p className="text-sm text-slate-600">Executar obras com excelência técnica, garantindo a satisfação total do cliente e a valorização do património edificado.</p>
+                  <p className="text-sm text-slate-600">Reabilitar e proteger edifícios com excelência técnica, materiais adequados e uma execução que valoriza o património.</p>
                 </div>
                 <div className="bg-slate-50 p-6 border-l-4 border-primary">
                   <h3 className="font-heading font-bold text-primary text-lg mb-2">Visão</h3>
-                  <p className="text-sm text-slate-600">Ser a empresa de referência em Portugal pela fiabilidade, inovação e sustentabilidade na construção civil.</p>
+                  <p className="text-sm text-slate-600">Ser uma referência na Grande Lisboa em reabilitação de edifícios, pela fiabilidade, segurança e qualidade do trabalho.</p>
                 </div>
               </div>
             </div>

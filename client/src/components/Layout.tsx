@@ -125,10 +125,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663290027302/3Zx2uD7myBxbJfhgGteh6M/logo_a7fee36a.png" alt="B&L Construções" className="h-16" />
               </div>
               <p className="text-slate-300 text-sm leading-relaxed max-w-xs font-light">
-                Excelência em construção civil, remodelações e reabilitação. Transformamos projetos em realidade com rigor técnico e compromisso.
+                Especialistas em reabilitação de edifícios, fachadas e coberturas. Trabalhamos com rigor técnico, equipa própria e compromisso.
               </p>
               <div className="flex gap-4 pt-2">
-                <a href="https://www.instagram.com/b.lconstrucao/p/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white">
+                <a href="https://www.instagram.com/blconstrucoes.oficial/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white" aria-label="Instagram B&L Construções">
                   <Instagram className="h-4 w-4" />
                 </a>
                 <a href="https://www.facebook.com/share/1BxK6zjjuV/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white">
@@ -156,11 +156,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <span className="w-2 h-2 bg-secondary inline-block"></span> SERVIÇOS
               </h3>
               <ul className="space-y-3 text-sm text-slate-300">
-                <li>Construção de Moradias</li>
-                <li>Remodelação de Interiores</li>
                 <li>Reabilitação de Edifícios</li>
-                <li>Obras Comerciais</li>
-                <li>Gestão de Obra</li>
+                <li>Fachadas, Rapel e Andaimes</li>
+                <li>Impermeabilização de Telhados</li>
+                <li>Caleiras e Tubos de Queda</li>
+                <li>Pintura e Revestimentos</li>
               </ul>
             </div>
 
@@ -172,7 +172,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-4 text-sm text-slate-300">
                 <li className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-secondary shrink-0" />
-                  <span>Rua das Orquédeas 3, 2950-807<br />Pinhal das Formas, Portugal</span>
+                  <span>Rua das Orquídeas 3, 2950-807<br />Pinhal das Formas, Portugal</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-secondary shrink-0" />

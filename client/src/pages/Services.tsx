@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, ArrowRight, Home, Hammer, Building2, Store, ClipboardList } from "lucide-react";
+import { Check, ArrowRight, HardHat, Building2, Paintbrush, CloudRain, ClipboardList } from "lucide-react";
 import { Link } from "wouter";
 
 import SEO from "@/components/SEO";
@@ -8,70 +8,70 @@ import SEO from "@/components/SEO";
 export default function Services() {
   const services = [
     {
-      id: "construcao-moradias",
-      title: "Construção de Moradias",
-      icon: <Home className="h-10 w-10" />,
-      description: "Construímos a casa dos seus sonhos, desde a fundação até à entrega da chave. Garantimos acompanhamento total em todas as fases da obra.",
-      features: [
-        "Estruturas em betão armado",
-        "Alvenarias e isolamentos térmicos/acústicos",
-        "Instalações técnicas (águas, esgotos, eletricidade)",
-        "Acabamentos interiores e exteriores",
-        "Arranjos exteriores e piscinas"
-      ],
-      image: "/images/L6nJ4cMqK6bn.jpg"
-    },
-    {
-      id: "remodelacoes",
-      title: "Remodelações Interiores",
-      icon: <Hammer className="h-10 w-10" />,
-      description: "Transformamos espaços antigos em ambientes modernos e funcionais. Especialistas em renovação de cozinhas, casas de banho e open-spaces.",
-      features: [
-        "Demolições e remoção de entulho",
-        "Substituição de canalizações e rede elétrica",
-        "Aplicação de novos revestimentos e pavimentos",
-        "Tetos falsos e iluminação LED",
-        "Carpintarias e cozinhas por medida"
-      ],
-      image: "/images/JmNYl3ewOGb6.jpg"
-    },
-    {
-      id: "reabilitacao",
+      id: "reabilitacao-edificios",
       title: "Reabilitação de Edifícios",
       icon: <Building2 className="h-10 w-10" />,
-      description: "Recuperação de edifícios degradados, mantendo a traça original mas conferindo o conforto e segurança dos padrões atuais.",
+      description: "Intervenções de reabilitação para edifícios e condomínios, com planeamento, execução e acompanhamento próximo em todas as fases.",
       features: [
-        "Reforço estrutural de edifícios antigos",
-        "Recuperação e pintura de fachadas",
-        "Substituição de coberturas e telhados",
-        "Impermeabilizações",
-        "Reabilitação de áreas comuns e escadas"
+        "Diagnóstico e planeamento da intervenção",
+        "Reabilitação de fachadas e zonas comuns",
+        "Coordenação de trabalhos e equipas",
+        "Acompanhamento semanal",
+        "Execução com equipa própria"
       ],
       image: "/images/reabilitacao-edificios.png"
     },
     {
-      id: "obras-comerciais",
-      title: "Obras Comerciais",
-      icon: <Store className="h-10 w-10" />,
-      description: "Construção e remodelação de lojas, escritórios e espaços comerciais. Foco no cumprimento rigoroso de prazos para abertura do negócio.",
+      id: "fachadas",
+      title: "Fachadas, Rapel e Andaimes",
+      icon: <HardHat className="h-10 w-10" />,
+      description: "Reparamos e valorizamos fachadas com acesso por rapel ou andaimes, escolhendo o método mais seguro e adequado a cada edifício.",
       features: [
-        "Adaptação de espaços para comércio/serviços",
-        "Divisórias em pladur e vidro",
-        "Sistemas de climatização AVAC",
-        "Instalações elétricas industriais",
-        "Pavimentos técnicos e de alto tráfego"
+        "Reparação de fissuras e rebocos",
+        "Pintura e acabamentos exteriores",
+        "Aplicação de capoto e isolamento",
+        "Trabalhos em altura por rapel",
+        "Montagem e utilização de andaimes"
       ],
-      image: "/images/rs4n4MMtS5vv.jpg"
+      image: "/images/reabilitacao-fachada.jpg"
+    },
+    {
+      id: "impermeabilizacao",
+      title: "Impermeabilização e Telhados",
+      icon: <CloudRain className="h-10 w-10" />,
+      description: "Protegemos coberturas e telhados contra infiltrações, com soluções de impermeabilização e manutenção das águas pluviais.",
+      features: [
+        "Impermeabilização de telhados e coberturas",
+        "Reparação e substituição de caleiras",
+        "Colocação de tubos de queda",
+        "Prevenção e correção de infiltrações",
+        "Materiais Sika, Barbot e CIN"
+      ],
+      image: "/images/reabilitacao-rappel.jpg"
+    },
+    {
+      id: "pintura-revestimentos",
+      title: "Pintura e Revestimentos",
+      icon: <Paintbrush className="h-10 w-10" />,
+      description: "Damos nova vida a interiores e exteriores com preparação cuidada, pintura profissional e materiais adequados a cada superfície.",
+      features: [
+        "Preparação e tratamento de superfícies",
+        "Pintura de fachadas e zonas comuns",
+        "Soluções Barbot e CIN",
+        "Reparação de rebocos e acabamentos",
+        "Limpeza e entrega cuidada"
+      ],
+      image: "/images/20A5gGHotQmb.jpg"
     },
     {
       id: "gestao-obra",
       title: "Gestão de Obra",
       icon: <ClipboardList className="h-10 w-10" />,
-      description: "Coordenação integral de empreitadas, garantindo controlo de custos, prazos e qualidade de execução.",
+      description: "Coordenação integral da intervenção, garantindo controlo de custos, prazos, segurança e qualidade de execução.",
       features: [
         "Planeamento e cronograma de trabalhos",
         "Controlo orçamental",
-        "Coordenação de subempreiteiros",
+        "Coordenação de equipas e parceiros",
         "Fiscalização de qualidade",
         "Relatórios de progresso regulares"
       ],
@@ -82,8 +82,8 @@ export default function Services() {
   return (
     <div className="flex flex-col">
       <SEO 
-        title="Serviços de Construção e Remodelação" 
-        description="Conheça os nossos serviços: construção de moradias, remodelações interiores, reabilitação de edifícios e obras comerciais."
+        title="Serviços de Reabilitação de Edifícios" 
+        description="Reabilitação de edifícios, fachadas, impermeabilização de telhados, rapel, andaimes, caleiras e tubos de queda na Grande Lisboa."
       />
       {/* Header Section */}
       <section className="bg-slate-900 py-20 md:py-28 relative overflow-hidden">
@@ -92,7 +92,7 @@ export default function Services() {
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">O Que Oferecemos</span>
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Nossos Serviços</h1>
           <p className="text-xl text-slate-300 max-w-2xl font-light border-l-2 border-secondary pl-6">
-            Soluções integradas de engenharia e construção para projetos residenciais e comerciais, executadas com rigor e profissionalismo.
+            Especialistas em reabilitação de edifícios, fachadas e coberturas, com equipa própria, acompanhamento semanal e materiais de marcas de referência.
           </p>
         </div>
       </section>
@@ -163,7 +163,7 @@ export default function Services() {
             {[
               { step: "01", title: "Visita e Orçamento", desc: "Visitamos o local, analisamos as necessidades e apresentamos um orçamento detalhado e rigoroso." },
               { step: "02", title: "Planeamento", desc: "Definimos cronogramas, materiais e equipas para garantir que a obra decorre sem imprevistos." },
-              { step: "03", title: "Execução", desc: "Realização dos trabalhos com supervisão técnica constante e cumprimento das normas de segurança." },
+              { step: "03", title: "Execução", desc: "Realização dos trabalhos com equipa própria, supervisão constante e cumprimento das normas de segurança." },
               { step: "04", title: "Entrega", desc: "Limpeza final, vistoria conjunta e entrega da obra com garantia de qualidade." }
             ].map((item) => (
               <div key={item.step} className="bg-white p-8 border border-border relative group hover:border-secondary transition-colors">

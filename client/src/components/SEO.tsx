@@ -8,9 +8,9 @@ interface SEOProps {
 }
 
 export default function SEO({ 
-  title = "B&L Construções – Construção Civil e Remodelação", 
-  description = "Empresa de construção civil especializada em moradias, remodelações e reabilitação de edifícios em Portugal. Peça já o seu orçamento gratuito.",
-  keywords = "construção civil, remodelações, empreiteiro, obras, reabilitação, construção moradias, Lisboa, Portugal",
+  title = "B&L Construções – Reabilitação de Edifícios e Fachadas", 
+  description = "Empresa especializada em reabilitação de edifícios, fachadas, rapel, andaimes e impermeabilização de telhados na Grande Lisboa.",
+  keywords = "reabilitação de edifícios, reabilitação de fachadas, rapel, andaimes, impermeabilização de telhados, caleiras, tubos de queda, Lisboa",
   image = "/images/GN8mOCNqfngu.jpg"
 }: SEOProps) {
   const siteTitle = title.includes("B&L Construções") ? title : `${title} | B&L Construções`;
@@ -40,19 +40,19 @@ export default function SEO({
           "@type": "GeneralContractor",
           "name": "B&L Construções",
           "image": image,
-          "telephone": "+351 912 345 678",
-          "email": "geral@blconstrucoes.pt",
+          "telephone": "+351 928 095 224",
+          "email": "geral@blconstrucoes.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Rua das Orquídeas, 2950-807",
-            "addressLocality": "Lisboa",
-            "postalCode": "1000-001",
+            "streetAddress": "Rua das Orquídeas 3",
+            "addressLocality": "Pinhal das Formas",
+            "postalCode": "2950-807",
             "addressCountry": "PT"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 38.7223,
-            "longitude": -9.1393
+            "latitude": 38.6103936,
+            "longitude": -8.9672748
           },
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",

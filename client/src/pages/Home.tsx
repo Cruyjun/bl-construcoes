@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Ruler, Hammer, HardHat, Building2, Home as HomeIcon } from "lucide-react";
+import { ArrowRight, CheckCircle2, Ruler, HardHat, Building2 } from "lucide-react";
 import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -30,17 +30,17 @@ export default function Home() {
           <div className="max-w-3xl animate-in slide-in-from-left-10 duration-700 fade-in">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 border border-secondary/30 text-secondary text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
-              Disponível para novos projetos
+              Reabilitação de edifícios na Grande Lisboa
             </div>
             
             <h1 className="text-5xl md:text-7xl font-heading font-bold text-white leading-[1.1] mb-6 tracking-tight">
-              CONSTRUÇÃO <br/>
+              REABILITAÇÃO <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">COM RIGOR</span> <br/>
               PROFISSIONAL
             </h1>
             
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed font-light border-l-2 border-secondary pl-6">
-              Especialistas em moradias, remodelações e reabilitação na Área Metropolitana de Lisboa. Transformamos a sua visão em obra feita com cumprimento rigoroso de prazos.
+              A sua obra em boas mãos. Reabilitação de edifícios, fachadas e coberturas com equipa própria, acompanhamento semanal e rigor técnico.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -76,16 +76,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BRAND PROMISE STRIP */}
+      <section className="bg-secondary text-white">
+        <div className="container py-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+          <div>
+            <p className="text-xs uppercase tracking-[0.25em] font-bold text-white/75 mb-1">O que nos distingue</p>
+            <p className="text-lg md:text-xl font-heading font-bold">Equipa própria · Orçamentos rigorosos · Acompanhamento semanal</p>
+          </div>
+          <a href="https://www.instagram.com/blconstrucoes.oficial/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider border border-white/40 px-5 py-3 hover:bg-white hover:text-primary transition-colors w-fit">
+            Ver obras no Instagram <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </section>
+
       {/* SERVICES SECTION */}
       <section className="py-20 md:py-32 bg-background relative">
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div>
               <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">O Que Fazemos</span>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary">Nossos Serviços</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary">Reabilitação com método</h2>
             </div>
             <p className="text-muted-foreground max-w-md text-right md:text-left">
-              Soluções completas de engenharia e construção, desde a fundação até aos acabamentos finais.
+              Soluções especializadas para condomínios, edifícios e fachadas, com equipas preparadas para executar cada intervenção com segurança e durabilidade.
             </p>
           </div>
 
@@ -95,13 +108,13 @@ export default function Home() {
               <div className="h-2 bg-primary w-full absolute top-0 left-0 group-hover:bg-secondary transition-colors"></div>
               <div className="p-8">
                 <div className="w-14 h-14 bg-slate-100 flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
-                  <HomeIcon className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
+                  <Building2 className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Construção de Moradias</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Construção de moradias unifamiliares do zero, com projetos personalizados e acabamentos de qualidade superior.</p>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Reabilitação de Edifícios</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Intervenções completas em edifícios e condomínios, da fachada às coberturas e zonas comuns.</p>
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Projetos personalizados</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Acabamentos premium</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Planeamento e execução integral</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Acompanhamento semanal</li>
                   <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Cronograma rigoroso</li>
                 </ul>
               </div>
@@ -112,14 +125,14 @@ export default function Home() {
               <div className="h-2 bg-primary w-full absolute top-0 left-0 group-hover:bg-secondary transition-colors"></div>
               <div className="p-8">
                 <div className="w-14 h-14 bg-slate-100 flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
-                  <Hammer className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
+                  <Building2 className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Remodelações Interiores</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Transformação completa de espaços interiores com design moderno, materiais de qualidade e execução impecável.</p>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Fachadas, Rapel e Andaimes</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Reparação e pintura de fachadas, com soluções técnicas para recuperar e valorizar o património.</p>
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Cozinhas e casas de banho</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pisos e revestimentos</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Acabamentos premium</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pintura e reparação</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Capoto e isolamento</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Rapel e andaimes</li>
                 </ul>
               </div>
             </div>
@@ -131,14 +144,32 @@ export default function Home() {
                 <div className="w-14 h-14 bg-slate-100 flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
                   <Building2 className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Reabilitação de Edifícios</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Reabilitação completa de fachadas, impermeabilização e reparação estrutural com técnicas modernas e seguras.</p>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Impermeabilização e Telhados</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Proteção de telhados e coberturas contra infiltrações, com soluções de impermeabilização e manutenção de águas pluviais.</p>
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Reabilitação de fachadas</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Trabalho em altura (rappel)</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Impermeabilização</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Impermeabilização de telhados</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Caleiras e tubos de queda</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Soluções Sika, Barbot e CIN</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PARTNER BRANDS */}
+      <section className="py-12 bg-slate-100 border-y border-border">
+        <div className="container">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block">Materiais de referência</span>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary">Trabalhamos com Sika, Barbot e CIN</h2>
+              <p className="text-sm text-muted-foreground mt-2 max-w-2xl">Selecionamos sistemas e produtos adequados a cada fachada, cobertura e superfície para garantir uma intervenção duradoura.</p>
+            </div>
+            <div className="flex flex-wrap gap-3 md:max-w-xs md:justify-end">
+              {['SIKA', 'BARBOT', 'CIN'].map((brand) => (
+                <span key={brand} className="border border-primary/20 bg-white px-5 py-3 text-sm font-heading font-bold tracking-widest text-primary">{brand}</span>
+              ))}
             </div>
           </div>
         </div>
@@ -171,24 +202,24 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project 2 - Moradia em Palmela */}
+            {/* Project 2 - Impermeabilização de Coberturas */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
-                src="/images/moradia-palmela.jpg" 
-                alt="Moradia - Área Metropolitana" 
+                src="/images/reabilitacao-edificios.png" 
+                alt="Impermeabilização de cobertura" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Construção</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Moradia em Palmela</h3>
+                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Coberturas</span>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Impermeabilização de Coberturas</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
-                  Construção de moradia unifamiliar moderna com acabamentos de qualidade.
+                  Intervenções em telhados, caleiras e tubos de queda para prevenir infiltrações e prolongar a vida do edifício.
                 </p>
               </div>
             </div>
 
-            {/* Project 3 - Remodelação de Interiores */}
+            {/* Project 3 - Pintura e Revestimentos */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
                 src="/images/remodelacao-interiores.jpg" 
@@ -197,27 +228,27 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Remodelação</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Remodelação de Interiores</h3>
+                <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Acabamentos</span>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Pintura e Revestimentos</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
-                  Transformação completa de espaços interiores com novos acabamentos e layout.
+                  Preparação cuidada e aplicação de soluções de pintura e revestimento para interiores e exteriores.
                 </p>
               </div>
             </div>
 
-            {/* Project 4 - Reabilitação de Fachadas em Rappel */}
+            {/* Project 4 - Reabilitação de Fachadas em Rapel */}
             <div className="group relative h-[400px] overflow-hidden cursor-pointer">
               <img 
                 src="/images/reabilitacao-rappel.jpg" 
-                alt="Reabilitação de Fachadas em Rappel" 
+                alt="Reabilitação de Fachadas em Rapel" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 <span className="text-secondary text-xs font-bold uppercase tracking-widest mb-2 block">Reabilitação</span>
-                <h3 className="text-2xl font-heading font-bold text-white mb-2">Reabilitação em Rappel</h3>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">Reabilitação em Rapel</h3>
                 <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 max-w-md">
-                  Trabalho em altura com técnicas de rappel para reabilitação segura de fachadas.
+                  Trabalho em altura por rapel para uma reabilitação segura e eficiente de fachadas.
                 </p>
               </div>
             </div>
@@ -238,9 +269,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Ricardo Silva", role: "Proprietário, Cascais", text: "Profissionalismo exemplar. A obra foi entregue antes do prazo e o orçamento foi cumprido ao cêntimo. Recomendo vivamente a B&L para quem procura rigor.", stars: 5 },
-              { name: "Ana Martins", role: "Arquiteta", text: "Como arquiteta, é difícil encontrar parceiros que respeitem o projeto com tanto detalhe. A execução técnica foi impecável e a comunicação fluida.", stars: 5 },
-              { name: "Carlos Ferreira", role: "Gestor de Condomínio", text: "A reabilitação da fachada do nosso prédio ficou excelente. Equipa muito educada, limpa e organizada. Valorizaram imenso o nosso património.", stars: 5 }
+              { name: "Vera Silva", role: "Gestão Moderna Condomínios", text: "Destacamos a dedicação, o profissionalismo, o rigor e a qualidade técnica demonstrados pela equipa da B&L Construções.", stars: 5 },
+              { name: "Cliente B&L", role: "Remodelação residencial", text: "Uma equipa organizada, disponível e cuidadosa em todas as fases da obra. O resultado final correspondeu ao que tínhamos imaginado.", stars: 5 },
+              { name: "Cliente B&L", role: "Reabilitação de fachada", text: "Acompanhamento próximo, comunicação clara e atenção ao detalhe. Uma solução profissional para valorizar o nosso edifício.", stars: 5 }
             ].map((testimonial, idx) => (
               <div key={idx} className="bg-slate-50 p-8 border border-border relative">
                 <div className="flex gap-1 mb-4">
@@ -267,13 +298,13 @@ export default function Home() {
         <div className="container">
           <div className="flex justify-between items-end mb-10">
             <div>
-              <a href="https://www.instagram.com/b.lconstrucao/" target="_blank" rel="noopener noreferrer" className="text-2xl font-heading font-bold text-primary flex items-center gap-2 hover:text-secondary transition-colors cursor-pointer">
+              <a href="https://www.instagram.com/blconstrucoes.oficial/" target="_blank" rel="noopener noreferrer" className="text-2xl font-heading font-bold text-primary flex items-center gap-2 hover:text-secondary transition-colors cursor-pointer">
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
-                @b.lconstrucoes
+                @blconstrucoes.oficial
               </a>
               <p className="text-sm text-muted-foreground">Acompanhe o dia-a-dia das nossas obras.</p>
             </div>
-            <a href="https://www.instagram.com/b.lconstrucao/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-secondary hover:underline">Seguir no Instagram</a>
+            <a href="https://www.instagram.com/blconstrucoes.oficial/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-secondary hover:underline">Seguir no Instagram</a>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
@@ -315,7 +346,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold font-heading mb-1">Rigor Técnico</h4>
-                    <p className="text-slate-400 text-sm">Cumprimento estrito das normas de construção e projetos de engenharia.</p>
+                    <p className="text-slate-400 text-sm">Planeamento rigoroso, materiais adequados e execução técnica em cada intervenção.</p>
                   </div>
                 </div>
                 
@@ -325,7 +356,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold font-heading mb-1">Equipa Própria</h4>
-                    <p className="text-slate-400 text-sm">Profissionais qualificados e segurados, sem subcontratações excessivas.</p>
+                    <p className="text-slate-400 text-sm">Profissionais preparados para rapel, andaimes, fachadas e coberturas.</p>
                   </div>
                 </div>
               </div>
@@ -412,11 +443,11 @@ export default function Home() {
                 },
                 {
                   q: "Fazem reabilitação de fachadas?",
-                  a: "Sim, especializamo-nos em reabilitação de fachadas, incluindo trabalho em altura com técnicas de rappel. Realizamos impermeabilização, pintura e reparação estrutural."
+                  a: "Sim. Realizamos reparação, pintura, capoto e impermeabilização de fachadas, com acesso por rapel ou andaimes conforme as necessidades da obra."
                 },
                 {
-                  q: "Qual é a forma de pagamento?",
-                  a: "Oferecemos diferentes opções: pagamento à vista, parcelado ou financiamento. Discutimos as melhores condições no contrato. Aceitamos transferência bancária e cheque."
+                  q: "Que materiais e marcas utilizam?",
+                  a: "Trabalhamos com marcas de referência como Sika, Barbot e CIN, escolhendo a solução mais adequada para cada superfície e tipo de intervenção."
                 },
                 {
                   q: "Têm referências de clientes?",
