@@ -38,7 +38,7 @@ export default function About() {
                   Com uma equipa própria de profissionais qualificados, especializamo-nos na reabilitação de edifícios, fachadas e coberturas, incluindo trabalhos em altura por rapel e andaimes.
                 </p>
                 <p>
-                  Hoje, trabalhamos em toda a Grande Lisboa com foco em condomínios e proprietários que procuram uma intervenção rigorosa: impermeabilização de telhados, manutenção de caleiras e tubos de queda, pintura e recuperação de fachadas, além de remodelações interiores com pladur, canalização e pavimentos.
+                  Hoje, trabalhamos em toda a Grande Lisboa com foco em condomínios e proprietários que procuram uma intervenção rigorosa: impermeabilização de telhados, manutenção de caleiras e tubos de queda, pintura e recuperação de fachadas, além de remodelações interiores com gesso cartonado, tetos falsos, redes de águas e pavimentos.
                 </p>
               </div>
 

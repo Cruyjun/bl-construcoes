@@ -162,7 +162,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li>Caleiras e Tubos de Queda</li>
                 <li>Pintura e Revestimentos</li>
                 <li>Remodelações Interiores</li>
-                <li>Pladur, Canalização e Pavimentos</li>
+                <li>Gesso Cartonado, Águas e Pavimentos</li>
               </ul>
             </div>
 

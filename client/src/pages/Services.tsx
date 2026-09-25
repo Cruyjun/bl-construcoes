@@ -70,9 +70,9 @@ export default function Services() {
       description: "Remodelamos interiores com uma execução organizada e cuidada, desde a preparação do espaço até aos acabamentos finais.",
       features: [
         "Pintura e preparação de superfícies",
-        "Pladur, divisórias e tetos falsos",
-        "Canalização e redes de água",
-        "Pavimento vinílico e flutuante",
+        "Sistemas de gesso cartonado, divisórias e tetos falsos",
+        "Redes de águas e esgotos",
+        "Pavimentos vinílicos e flutuantes",
         "Coordenação dos acabamentos"
       ],
       image: "/images/remodelacao-interiores.jpg"
@@ -97,7 +97,7 @@ export default function Services() {
     <div className="flex flex-col">
       <SEO 
         title="Serviços de Reabilitação de Edifícios" 
-        description="Reabilitação de edifícios, fachadas, impermeabilização de telhados e remodelações interiores com pintura, pladur, canalização e pavimentos na Grande Lisboa."
+        description="Reabilitação de edifícios, fachadas, impermeabilização de telhados e remodelações interiores com pintura, gesso cartonado, redes de águas e pavimentos na Grande Lisboa."
       />
       {/* Header Section */}
       <section className="bg-slate-900 py-20 md:py-28 relative overflow-hidden">
@@ -106,7 +106,7 @@ export default function Services() {
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">O Que Oferecemos</span>
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Nossos Serviços</h1>
           <p className="text-xl text-slate-300 max-w-2xl font-light border-l-2 border-secondary pl-6">
-            Reabilitação de edifícios e remodelações interiores, com equipa própria, acompanhamento semanal e execução cuidada em cada fase — da pintura e pladur à canalização e aos pavimentos.
+            Reabilitação de edifícios e remodelações interiores, com equipa própria, acompanhamento semanal e execução cuidada em cada fase — da pintura e do gesso cartonado às redes de águas e aos pavimentos.
           </p>
         </div>
       </section>

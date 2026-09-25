@@ -164,9 +164,9 @@ export default function Home() {
                 <h3 className="text-2xl font-heading font-bold text-primary mb-4">Remodelações Interiores</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">Transformamos interiores com execução cuidada, desde a preparação das superfícies até aos acabamentos finais.</p>
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pintura e pladur</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Canalização</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pavimento vinílico e flutuante</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pintura e gesso cartonado</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Redes de águas e esgotos</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pavimentos vinílicos e flutuantes</li>
                 </ul>
               </div>
             </div>
@@ -452,7 +452,7 @@ export default function Home() {
                 },
                 {
                   q: "Que trabalhos de remodelação interior fazem?",
-                  a: "Realizamos pintura, pladur, canalização, colocação de pavimento vinílico e flutuante, além de outros acabamentos necessários para renovar o espaço de forma coordenada."
+                  a: "Realizamos pintura, sistemas de gesso cartonado, divisórias, tetos falsos, redes de águas e esgotos, pavimentos vinílicos e flutuantes, além de outros acabamentos necessários para renovar o espaço de forma coordenada."
                 },
                 {
                   q: "Fazem reabilitação de fachadas?",
