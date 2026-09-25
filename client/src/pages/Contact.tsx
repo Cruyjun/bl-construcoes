@@ -175,6 +175,10 @@ export default function Contact() {
                           <SelectItem value="impermeabilizacao">Impermeabilização de Telhados</SelectItem>
                           <SelectItem value="caleiras-tubos-queda">Caleiras e Tubos de Queda</SelectItem>
                           <SelectItem value="pintura-revestimentos">Pintura e Revestimentos</SelectItem>
+                          <SelectItem value="remodelacoes-interiores">Remodelações Interiores</SelectItem>
+                          <SelectItem value="pladur">Pladur e Divisórias</SelectItem>
+                          <SelectItem value="canalizacao">Canalização</SelectItem>
+                          <SelectItem value="pavimentos">Pavimento Vinílico ou Flutuante</SelectItem>
                           <SelectItem value="gestao-obra">Gestão de Obra</SelectItem>
                           <SelectItem value="outro">Outro</SelectItem>
                         </SelectContent>

@@ -9,8 +9,8 @@ interface SEOProps {
 
 export default function SEO({ 
   title = "B&L Construções – Reabilitação de Edifícios e Fachadas", 
-  description = "Empresa especializada em reabilitação de edifícios, fachadas, rapel, andaimes e impermeabilização de telhados na Grande Lisboa.",
-  keywords = "reabilitação de edifícios, reabilitação de fachadas, rapel, andaimes, impermeabilização de telhados, caleiras, tubos de queda, alvará 121659, Lisboa",
+  description = "Empresa especializada em reabilitação de edifícios, fachadas, impermeabilização e remodelações interiores com pintura, pladur, canalização e pavimentos na Grande Lisboa.",
+  keywords = "reabilitação de edifícios, reabilitação de fachadas, remodelações interiores, pintura, pladur, canalização, pavimento vinílico, pavimento flutuante, rapel, andaimes, impermeabilização de telhados, alvará 121659, Lisboa",
   image = "/images/GN8mOCNqfngu.jpg"
 }: SEOProps) {
   const siteTitle = title.includes("B&L Construções") ? title : `${title} | B&L Construções`;

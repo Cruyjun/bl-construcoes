@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Ruler, HardHat, Building2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Ruler, HardHat, Building2, Paintbrush } from "lucide-react";
 import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="max-w-3xl animate-in slide-in-from-left-10 duration-700 fade-in">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 border border-secondary/30 text-secondary text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
-              Reabilitação de edifícios na Grande Lisboa
+              Reabilitação e remodelações na Grande Lisboa
             </div>
             
             <h1 className="text-5xl md:text-7xl font-heading font-bold text-white leading-[1.1] mb-6 tracking-tight">
@@ -40,7 +40,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed font-light border-l-2 border-secondary pl-6">
-              A sua obra em boas mãos. Reabilitação de edifícios, fachadas e coberturas com equipa própria, acompanhamento semanal e rigor técnico.
+              A sua obra em boas mãos. Reabilitação de edifícios, fachadas, coberturas e remodelações interiores com equipa própria, acompanhamento semanal e rigor técnico.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -98,11 +98,11 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary">Reabilitação com método</h2>
             </div>
             <p className="text-muted-foreground max-w-md text-right md:text-left">
-              Soluções especializadas para condomínios, edifícios e fachadas, com equipas preparadas para executar cada intervenção com segurança e durabilidade.
+              Reabilitação de edifícios e remodelações interiores, com equipas preparadas para executar cada intervenção com segurança e durabilidade.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Service 1 */}
             <div className="group border border-border bg-white hover:border-secondary transition-colors duration-300 relative overflow-hidden">
               <div className="h-2 bg-primary w-full absolute top-0 left-0 group-hover:bg-secondary transition-colors"></div>
@@ -150,6 +150,23 @@ export default function Home() {
                   <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Impermeabilização de telhados</li>
                   <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Caleiras e tubos de queda</li>
                   <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Proteção contra infiltrações</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Service 4 */}
+            <div className="group border border-border bg-white hover:border-secondary transition-colors duration-300 relative overflow-hidden">
+              <div className="h-2 bg-primary w-full absolute top-0 left-0 group-hover:bg-secondary transition-colors"></div>
+              <div className="p-8">
+                <div className="w-14 h-14 bg-slate-100 flex items-center justify-center mb-6 group-hover:bg-secondary/10 transition-colors">
+                  <Paintbrush className="h-7 w-7 text-primary group-hover:text-secondary transition-colors" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Remodelações Interiores</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">Transformamos interiores com execução cuidada, desde a preparação das superfícies até aos acabamentos finais.</p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pintura e pladur</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Canalização</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-secondary" /> Pavimento vinílico e flutuante</li>
                 </ul>
               </div>
             </div>
@@ -432,6 +449,10 @@ export default function Home() {
                 {
                   q: "Trabalham com rapel e andaimes?",
                   a: "Sim. Avaliamos cada edifício e escolhemos o método de acesso mais adequado, entre rapel e andaimes, sempre com foco na segurança e na qualidade da execução."
+                },
+                {
+                  q: "Que trabalhos de remodelação interior fazem?",
+                  a: "Realizamos pintura, pladur, canalização, colocação de pavimento vinílico e flutuante, além de outros acabamentos necessários para renovar o espaço de forma coordenada."
                 },
                 {
                   q: "Fazem reabilitação de fachadas?",

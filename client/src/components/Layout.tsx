@@ -125,7 +125,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663290027302/3Zx2uD7myBxbJfhgGteh6M/logo_a7fee36a.png" alt="B&L Construções" className="h-16" />
               </div>
               <p className="text-slate-300 text-sm leading-relaxed max-w-xs font-light">
-                Especialistas em reabilitação de edifícios, fachadas e coberturas. Trabalhamos com rigor técnico, equipa própria e compromisso.
+                Especialistas em reabilitação de edifícios, fachadas, coberturas e remodelações interiores. Trabalhamos com rigor técnico, equipa própria e compromisso.
               </p>
               <div className="flex gap-4 pt-2">
                 <a href="https://www.instagram.com/blconstrucoes.oficial/" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 hover:bg-secondary transition-colors text-white" aria-label="Instagram B&L Construções">
@@ -161,6 +161,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li>Impermeabilização de Telhados</li>
                 <li>Caleiras e Tubos de Queda</li>
                 <li>Pintura e Revestimentos</li>
+                <li>Remodelações Interiores</li>
+                <li>Pladur, Canalização e Pavimentos</li>
               </ul>
             </div>
 
