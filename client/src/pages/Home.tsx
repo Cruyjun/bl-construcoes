@@ -35,7 +35,7 @@ const services = [
   {
     title: "Pintura Profissional",
     description: "Preparação rigorosa e aplicação de soluções adequadas a interiores e exteriores.",
-    image: "/images/20A5gGHotQmb.jpg",
+    image: "/images/pintura-revestimentos.png",
     icon: Paintbrush,
   },
   {

@@ -61,7 +61,7 @@ export default function Services() {
         "Reparação de rebocos e acabamentos",
         "Limpeza e entrega cuidada"
       ],
-      image: "/images/20A5gGHotQmb.jpg"
+      image: "/images/pintura-revestimentos.png"
     },
     {
       id: "remodelacoes-interiores",
