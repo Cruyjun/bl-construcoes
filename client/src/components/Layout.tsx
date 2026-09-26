@@ -42,10 +42,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Main Header */}
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-24 items-center justify-between">
+        <div className="container flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-0 group">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663290027302/3Zx2uD7myBxbJfhgGteh6M/logo_a7fee36a.png" alt="B&L Construções" className="h-20 transition-transform group-hover:scale-105" style={{width: '200px', height: '135px'}} />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663290027302/3Zx2uD7myBxbJfhgGteh6M/logo_a7fee36a.png" alt="B&L Construções" className="h-16 w-[170px] object-contain transition-transform group-hover:scale-105" />
           </Link>
 
           {/* Desktop Nav */}
