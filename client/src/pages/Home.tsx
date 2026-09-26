@@ -44,6 +44,12 @@ const services = [
     image: "/images/remodelacao-interiores.jpg",
     icon: Wrench,
   },
+  {
+    title: "Trabalhos em Altura",
+    description: "Acesso por rapel e andaimes para fachadas, coberturas e intervenções técnicas.",
+    image: "/images/reabilitacao-rappel.jpg",
+    icon: HardHat,
+  },
 ];
 
 const projects = [
@@ -90,12 +96,13 @@ export default function Home() {
               <span className="h-2 w-2 rounded-full bg-secondary" />
               Reabilitação e remodelações na Grande Lisboa
             </div>
-            <h1 className="mb-6 text-5xl font-heading font-bold leading-[1.02] tracking-tight md:text-7xl">
-              A sua obra em boas mãos.
-              <span className="mt-2 block text-secondary">Rigor profissional.</span>
+            <h1 className="mb-4 text-5xl font-heading font-bold leading-[1.02] tracking-tight text-white md:text-7xl">
+              Reabilitação e
+              <span className="mt-2 block text-secondary">Pintura Profissional</span>
             </h1>
+            <p className="mb-3 text-lg font-semibold text-white md:text-xl">Lisboa · Setúbal · Margem Sul</p>
             <p className="mb-9 max-w-xl border-l-2 border-secondary pl-5 text-lg leading-relaxed text-slate-200 md:text-xl">
-              Reabilitação de edifícios, fachadas e coberturas. Remodelações interiores executadas com equipa própria, planeamento e acompanhamento técnico.
+              Soluções completas para fachadas, impermeabilização, remodelações interiores e manutenção de edifícios.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link href="/contactos">
@@ -157,9 +164,9 @@ export default function Home() {
               <span className="mb-2 block text-sm font-bold uppercase tracking-[0.2em] text-secondary">O que fazemos</span>
               <h2 className="text-4xl font-heading font-bold text-primary md:text-5xl">Os nossos serviços</h2>
             </div>
-            <p className="max-w-xl text-base text-muted-foreground md:text-right">Soluções completas para particulares, empresas e condomínios, com foco na durabilidade e na qualidade de execução.</p>
+              <p className="max-w-xl text-base text-muted-foreground md:text-right">Soluções completas para particulares, empresas e condomínios.</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {services.map(({ title, description, image, icon: Icon }) => (
               <article key={title} className="group overflow-hidden border border-border bg-white transition-all duration-300 hover:-translate-y-1 hover:border-secondary hover:shadow-xl">
                 <div className="relative h-40 overflow-hidden">
@@ -235,7 +242,7 @@ export default function Home() {
         <div className="container">
           <div className="mb-12 max-w-3xl">
             <span className="mb-2 block text-sm font-bold uppercase tracking-[0.2em] text-secondary">Porquê escolher a B&L?</span>
-            <h2 className="text-4xl font-heading font-bold md:text-5xl">Confiança para contratar com tranquilidade.</h2>
+            <h2 className="text-4xl font-heading font-bold text-white md:text-5xl">Confiança para contratar com tranquilidade.</h2>
           </div>
           <div className="grid gap-8 md:grid-cols-5">
             {[
@@ -267,14 +274,14 @@ export default function Home() {
               </p>
             </div>
             <div className="grid w-full grid-cols-3 gap-3 lg:max-w-xl">
-              <div className="flex min-h-24 items-center justify-center border border-border bg-slate-50 px-4 py-5 text-center">
-                <span className="text-3xl font-black italic tracking-tight text-[#e1251b]">SIKA</span>
+              <div className="flex min-h-24 items-center justify-center border border-border bg-slate-50 px-4 py-3">
+                <img src="/images/logo-sika.png" alt="Sika" className="max-h-20 w-full object-contain" />
               </div>
-              <div className="flex min-h-24 items-center justify-center border border-border bg-[#00549f] px-4 py-5 text-center">
-                <span className="text-3xl font-black tracking-tight text-white">CIN</span>
+              <div className="flex min-h-24 items-center justify-center border border-border bg-slate-50 px-4 py-3">
+                <img src="/images/logo-cin.png" alt="CIN" className="max-h-20 w-full object-contain" />
               </div>
-              <div className="flex min-h-24 items-center justify-center border border-border bg-slate-50 px-4 py-5 text-center">
-                <span className="text-2xl font-black tracking-tight text-primary">BARBOT</span>
+              <div className="flex min-h-24 items-center justify-center border border-border bg-slate-50 px-4 py-3">
+                <img src="/images/logo-barbot.gif" alt="Barbot" className="max-h-20 w-full object-contain" />
               </div>
             </div>
           </div>

@@ -41,11 +41,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
 
       {/* Main Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-primary backdrop-blur supports-[backdrop-filter]:bg-primary/95">
         <div className="container flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-0 group">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663290027302/3Zx2uD7myBxbJfhgGteh6M/logo_a7fee36a.png" alt="B&L Construções" className="h-16 w-[170px] object-contain transition-transform group-hover:scale-105" />
+            <img src="/images/bl-logo-cropped.png" alt="B&L Construções" className="h-14 w-[175px] object-contain transition-transform group-hover:scale-105" style={{ filter: "brightness(0) invert(1)" }} />
           </Link>
 
           {/* Desktop Nav */}
@@ -57,8 +57,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-secondary uppercase tracking-wide relative py-1",
                   location === item.href
-                    ? "text-primary font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-secondary"
-                    : "text-muted-foreground"
+                    ? "text-white font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-secondary"
+                    : "text-slate-300"
                 )}
               >
                 {item.label}
@@ -73,7 +73,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 text-primary"
+            className="md:hidden p-2 text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
@@ -82,7 +82,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {/* Mobile Nav */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border bg-background absolute w-full left-0 shadow-lg animate-in slide-in-from-top-5">
+          <div className="md:hidden border-t border-white/10 bg-primary absolute w-full left-0 shadow-lg animate-in slide-in-from-top-5">
             <div className="container py-4 flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
@@ -91,8 +91,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   className={cn(
                     "text-base font-medium py-2 border-l-2 pl-4 transition-all",
                     location === item.href
-                      ? "border-secondary text-primary bg-muted/50"
-                      : "border-transparent text-muted-foreground hover:text-primary hover:border-border"
+                      ? "border-secondary text-white bg-white/10"
+                      : "border-transparent text-slate-300 hover:text-white hover:border-white/30"
                   )}
                 >
                   {item.label}
