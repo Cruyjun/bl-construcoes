@@ -47,7 +47,7 @@ export default function Services() {
         "Prevenção e correção de infiltrações",
         "Soluções adequadas a cada cobertura"
       ],
-      image: "/images/BHA35QvTslUS.jpg"
+      image: "/images/impermeabilizacao-cobertura.webp"
     },
     {
       id: "pintura-revestimentos",
