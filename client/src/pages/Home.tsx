@@ -186,7 +186,7 @@ export default function Home() {
             </div>
             <p className="max-w-xl text-base text-muted-foreground md:text-right">Soluções completas para particulares, empresas e condomínios, com foco na durabilidade e na qualidade de execução.</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {services.map(({ title, description, image, icon: Icon }) => (
               <article key={title} className="group overflow-hidden border border-border bg-white transition-all duration-300 hover:-translate-y-1 hover:border-secondary hover:shadow-xl">
                 <div className="relative h-40 overflow-hidden">
@@ -278,6 +278,32 @@ export default function Home() {
                 <p className="text-sm leading-relaxed text-slate-300">{description as string}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REFERENCE BRANDS */}
+      <section className="border-b border-border bg-white py-12 md:py-16">
+        <div className="container">
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+            <div className="max-w-xl">
+              <span className="mb-2 block text-sm font-bold uppercase tracking-[0.2em] text-secondary">Materiais e sistemas</span>
+              <h2 className="text-3xl font-heading font-bold text-primary md:text-4xl">Trabalhamos com marcas de referência</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+                Selecionamos produtos e sistemas adequados a cada fachada, cobertura e superfície para garantir uma intervenção técnica e duradoura.
+              </p>
+            </div>
+            <div className="grid w-full grid-cols-3 gap-3 lg:max-w-xl">
+              <div className="flex min-h-24 items-center justify-center border border-border bg-slate-50 px-4 py-5 text-center">
+                <span className="text-3xl font-black italic tracking-tight text-[#e1251b]">SIKA</span>
+              </div>
+              <div className="flex min-h-24 items-center justify-center border border-border bg-[#00549f] px-4 py-5 text-center">
+                <span className="text-3xl font-black tracking-tight text-white">CIN</span>
+              </div>
+              <div className="flex min-h-24 items-center justify-center border border-border bg-slate-50 px-4 py-5 text-center">
+                <span className="text-2xl font-black tracking-tight text-primary">BARBOT</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
