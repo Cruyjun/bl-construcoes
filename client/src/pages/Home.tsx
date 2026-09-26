@@ -29,7 +29,7 @@ const services = [
   {
     title: "Impermeabilização",
     description: "Coberturas, terraços e zonas comuns protegidos contra infiltrações e humidade.",
-    image: "/images/reabilitacao-edificios.png",
+    image: "/images/BHA35QvTslUS.jpg",
     icon: Droplets,
   },
   {
@@ -63,7 +63,7 @@ const projects = [
     title: "Impermeabilização de coberturas",
     category: "Coberturas",
     location: "Margem Sul",
-    image: "/images/reabilitacao-edificios.png",
+    image: "/images/BHA35QvTslUS.jpg",
   },
   {
     title: "Remodelação de interiores",

@@ -47,7 +47,7 @@ export default function Services() {
         "Prevenção e correção de infiltrações",
         "Soluções adequadas a cada cobertura"
       ],
-      image: "/images/reabilitacao-rappel.jpg"
+      image: "/images/BHA35QvTslUS.jpg"
     },
     {
       id: "pintura-revestimentos",
