@@ -75,33 +75,6 @@ const process = [
   ["05", "Entrega", "Verificamos o resultado e deixamos o espaço pronto."],
 ];
 
-const faqs = [
-  {
-    q: "O orçamento é gratuito?",
-    a: "Sim. O orçamento é gratuito. A visita técnica tem um custo de deslocação de 25€, reembolsável caso avance com a contratação.",
-  },
-  {
-    q: "Em que zonas trabalham?",
-    a: "Trabalhamos em toda a Área Metropolitana de Lisboa, incluindo Margem Sul, Margem Norte e zona de Cascais.",
-  },
-  {
-    q: "Que trabalhos fazem em interiores?",
-    a: "Executamos pintura, sistemas de gesso cartonado, divisórias, tetos falsos, redes de águas e esgotos, pavimentos vinílicos e flutuantes.",
-  },
-  {
-    q: "Trabalham com rapel e andaimes?",
-    a: "Sim. Escolhemos o método de acesso mais adequado à fachada e às condições da obra, sempre com foco na segurança.",
-  },
-  {
-    q: "Existe garantia nas obras?",
-    a: "Sim. As obras têm garantia e assistência técnica, de acordo com o trabalho realizado e as condições apresentadas na proposta.",
-  },
-  {
-    q: "Como acompanham a obra?",
-    a: "Mantemos contacto próximo, planeamento claro e acompanhamento regular para que saiba sempre em que ponto está a intervenção.",
-  },
-];
-
 export default function Home() {
   return (
     <div className="flex flex-col gap-0">
@@ -348,23 +321,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-background py-20 md:py-28">
-        <div className="container max-w-5xl">
-          <div className="mb-10 text-center">
-            <span className="mb-2 block text-sm font-bold uppercase tracking-[0.2em] text-secondary">Dúvidas frequentes</span>
-            <h2 className="text-4xl font-heading font-bold text-primary md:text-5xl">Antes de contratar</h2>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {faqs.map((item) => (
-              <div key={item.q} className="border border-border bg-white p-6 transition-colors hover:border-secondary">
-                <h3 className="mb-3 flex gap-2 font-heading text-lg font-bold text-primary"><span className="text-secondary">Q:</span>{item.q}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground"><span className="font-bold text-secondary">A: </span>{item.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
