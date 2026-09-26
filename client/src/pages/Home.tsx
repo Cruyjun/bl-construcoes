@@ -44,12 +44,6 @@ const services = [
     image: "/images/remodelacao-interiores.jpg",
     icon: Wrench,
   },
-  {
-    title: "Condomínios e Edifícios",
-    description: "Intervenções coordenadas para manter, proteger e valorizar edifícios.",
-    image: "/images/BHA35QvTslUS.jpg",
-    icon: ShieldCheck,
-  },
 ];
 
 const projects = [
