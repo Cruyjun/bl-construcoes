@@ -45,7 +45,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-0 group">
-            <img src="/images/bl-logo-cropped.png" alt="B&L Construções" className="h-14 w-[175px] object-contain transition-transform group-hover:scale-105" style={{ filter: "brightness(0) invert(1)" }} />
+            <span className="relative block h-14 w-[175px] overflow-hidden transition-transform group-hover:scale-105" aria-label="B&L Construções — Construção civil e reabilitação">
+              <img src="/images/bl-logo-orange.png" alt="" className="h-full w-full object-contain" />
+            </span>
           </Link>
 
           {/* Desktop Nav */}
