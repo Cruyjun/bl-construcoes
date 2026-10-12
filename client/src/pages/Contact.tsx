@@ -196,8 +196,7 @@ export default function Contact() {
 
                     <div className="bg-slate-50 p-4 rounded border border-border">
                       <p className="text-sm text-muted-foreground">
-                        <span className="font-bold text-primary">Orçamento:</span> Gratuito<br/>
-                        <span className="font-bold text-primary">Custo de Deslocação:</span> 25€ (reembolsável se contratar)
+                        <span className="font-bold text-primary">Orçamento:</span> Gratuito
                       </p>
                     </div>
 

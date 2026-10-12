@@ -316,7 +316,6 @@ export default function Home() {
                 <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-white/80">Pedir orçamento</p>
                 <h2 className="mb-4 text-3xl font-heading font-bold md:text-5xl">Vamos falar sobre a sua obra?</h2>
                 <p className="text-lg text-white/90">Envie-nos os detalhes do seu projeto. Analisamos o trabalho e entramos em contacto com a melhor solução.</p>
-                <p className="mt-4 text-sm text-white/80">Visita técnica: custo de deslocação de 25€, reembolsável se contratar.</p>
               </div>
               <Link href="/contactos" className="shrink-0">
                 <Button size="lg" className="h-auto rounded-none bg-primary px-8 py-5 text-base font-bold text-white hover:bg-primary/90">
