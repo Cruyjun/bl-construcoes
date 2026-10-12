@@ -25,4 +25,20 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+export const contactSubmissions = mysqlTable("contactSubmissions", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 160 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  phone: varchar("phone", { length: 40 }).notNull(),
+  service: varchar("service", { length: 160 }).notNull(),
+  message: text("message").notNull(),
+  status: mysqlEnum("status", ["new", "in_progress", "quoted", "won", "lost"]).default("new").notNull(),
+  crmStatus: mysqlEnum("crmStatus", ["not_configured", "pending", "synced", "failed"]).default("not_configured").notNull(),
+  crmError: text("crmError"),
+  crmSyncedAt: timestamp("crmSyncedAt"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type ContactSubmission = typeof contactSubmissions.$inferSelect;
+export type InsertContactSubmission = typeof contactSubmissions.$inferInsert;

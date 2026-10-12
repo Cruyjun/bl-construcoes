@@ -9,8 +9,10 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-function Router() {
-  // make sure to consider if you need authentication for certain routes
+import ContactDashboard from "./pages/ContactDashboard";
+import DashboardLayout from "./components/DashboardLayout";
+
+function PublicSite() {
   return (
     <Layout>
       <Switch>
@@ -20,10 +22,26 @@ function Router() {
         <Route path={"/sobre"} component={About} />
         <Route path={"/contactos"} component={Contact} />
         <Route path="/404" component={NotFound} />
-        {/* Final fallback route */}
         <Route component={NotFound} />
       </Switch>
     </Layout>
+  );
+}
+
+function InternalDashboard() {
+  return (
+    <DashboardLayout>
+      <ContactDashboard />
+    </DashboardLayout>
+  );
+}
+
+function Router() {
+  return (
+    <Switch>
+      <Route path="/gestao" component={InternalDashboard} />
+      <Route component={PublicSite} />
+    </Switch>
   );
 }
 

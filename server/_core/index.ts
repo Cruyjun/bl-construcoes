@@ -7,6 +7,8 @@ import { registerOAuthRoutes } from "./oauth";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
+import { sdk } from "./sdk";
+import { addContactEventClient } from "../contactEvents";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -35,6 +37,34 @@ async function startServer() {
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   // OAuth callback under /api/oauth/callback
   registerOAuthRoutes(app);
+  // Authenticated Server-Sent Events channel for the admin dashboard.
+  app.get("/api/contact/events", async (req, res) => {
+    try {
+      const user = await sdk.authenticateRequest(req);
+      if (user.role !== "admin") {
+        res.status(403).end();
+        return;
+      }
+
+      res.status(200).set({
+        "Content-Type": "text/event-stream",
+        "Cache-Control": "no-cache, no-transform",
+        Connection: "keep-alive",
+        "X-Accel-Buffering": "no",
+      });
+      res.flushHeaders();
+      res.write("event: ready\ndata: {}\n\n");
+
+      const removeClient = addContactEventClient(res);
+      const heartbeat = setInterval(() => res.write(": heartbeat\n\n"), 15_000);
+      req.on("close", () => {
+        clearInterval(heartbeat);
+        removeClient();
+      });
+    } catch {
+      res.status(401).end();
+    }
+  });
   // tRPC API
   app.use(
     "/api/trpc",

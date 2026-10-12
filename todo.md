@@ -7,11 +7,11 @@
 - [x] Validação de formulário de contacto
 - [x] Teste vitest para validar configuração SMTP
 
-## Funcionalidades Planeadas — não implementadas nesta fase pública
+## Funcionalidades de gestão implementadas
 
-> Estas funcionalidades continuam em backlog porque exigem decisões adicionais sobre utilizadores, retenção de dados, canal de notificações, CRM e credenciais/API.
+> O dashboard está protegido por autenticação e role de administrador. A integração CRM é opcional e fica ativa quando `CRM_WEBHOOK_URL` é configurado no ambiente de produção.
 
-- [ ] Dashboard de gestão de orçamentos
-- [ ] Histórico de pedidos de contacto
-- [ ] Notificações em tempo real
-- [ ] Integração com CRM
+- [x] Dashboard de gestão de orçamentos
+- [x] Histórico de pedidos de contacto
+- [x] Notificações em tempo real
+- [x] Integração com CRM via webhook opcional

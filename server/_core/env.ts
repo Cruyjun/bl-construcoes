@@ -12,4 +12,5 @@ export const ENV = {
   smtpUser: process.env.SMTP_USER ?? "",
   smtpPass: process.env.SMTP_PASS ?? "",
   contactTo: process.env.CONTACT_TO ?? "",
+  crmWebhookUrl: process.env.CRM_WEBHOOK_URL ?? "",
 };

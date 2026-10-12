@@ -24,13 +24,17 @@ export default function Contact() {
     }
 
     try {
-      await sendEmailMutation.mutateAsync({
+      const result = await sendEmailMutation.mutateAsync({
         name: data.name,
         phone: data.phone,
         email: data.email,
         service: selectedType,
         message: data.message,
       });
+
+      if (!result.success) {
+        throw new Error(result.message);
+      }
       
       toast.success("Orçamento solicitado com sucesso! Entraremos em contacto no prazo máximo de 24h úteis.");
       reset();
